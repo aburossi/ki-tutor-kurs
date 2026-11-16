@@ -1,0 +1,13 @@
+# Eigene Unterlagen bleiben lokal (Urheberrecht, öffentlicher Fork)
+mein-stoff/*
+!mein-stoff/README.md
+
+# Geheimnisse
+.env
+.env.*
+*.key
+
+# System
+.DS_Store
+Thumbs.db
+__pycache__/
