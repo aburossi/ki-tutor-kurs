@@ -12,6 +12,30 @@ Prüfungsantworten, die du als eigene abgibst. Er hilft dir, es selbst zu könne
 Du holst dir ein eigenes Exemplar dieses Repos. Danach passt du die
 Abläufe an und baust eigene. Das ist dein Abschlussprojekt.
 
+## Weg im Kurs: Aufgabe annehmen (privates Repo)
+
+Im Freifachkurs bekommst du ein eigenes, **privates** Repo. Nur du und die
+Lehrperson sehen es. Dorthin lädst du deine Arbeit hoch (push), und die Lehrperson
+sammelt sie am Schluss ein.
+
+1. Gib der Lehrperson deinen GitHub-Namen. Du bekommst eine Einladung in die
+   Organisation `freifach-ki` (per Mail oder auf github.com). Nimm sie an.
+   Die Einladung gilt 7 Tage.
+2. Öffne den Link der Lehrperson
+   (`https://classroom50.org/freifach-ki/ff26c/assignments/ki-tutor/accept`)
+   und nimm die Aufgabe an.
+3. Klone dein Repo:
+
+```bash
+git clone https://github.com/freifach-ki/ff26c-ki-tutor-<dein-github-name>.git
+cd ff26c-ki-tutor-<dein-github-name>
+```
+
+Sichern und hochladen am Ende jeder Sitzung: `git add -A`, `git commit -m "…"`,
+`git push`. Den Push machst du selbst, nicht der Agent.
+
+Wer ausserhalb des Kurses mitmachen will, nimmt Weg A oder B.
+
 ## Weg A: klonen ohne GitHub-Konto
 
 Du brauchst nur Git. Ein Konto ist nicht nötig, weil das Repo öffentlich ist.

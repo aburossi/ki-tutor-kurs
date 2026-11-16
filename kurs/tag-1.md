@@ -13,7 +13,7 @@
 ## Schritte
 
 - [ ] **0–5 Min: Ankommen.** Setz dich hin, öffne ein Terminal, lies das Ziel oben. Kein Setup in dieser Zeit.
-- [ ] **5–15 Min: Repo holen.** Entweder klonen mit `git clone https://github.com/aburossi/ki-tutor-kurs.git` oder auf der Webseite forken und den eigenen Fork klonen. Dann in den Ordner wechseln: `cd ki-tutor-kurs`.
+- [ ] **5–15 Min: Repo holen.** Im Kurs bekommst du ein eigenes, privates Repo (siehe README, «Weg im Kurs»): Einladung in die Organisation `freifach-ki` annehmen, dann den Link der Lehrperson öffnen und die Aufgabe annehmen. Dein Repo heisst `ff26c-ki-tutor-<dein-github-name>`. Klone es mit `git clone https://github.com/freifach-ki/ff26c-ki-tutor-<dein-github-name>.git` und wechsle in den Ordner. Ohne GitHub-Konto: zuerst `git clone https://github.com/aburossi/ki-tutor-kurs.git`, das Konto holst du bis Tag 2 nach.
 - [ ] **15–25 Min: Setup prüfen.** Windows: `powershell -ExecutionPolicy Bypass -File setup/pruefen.ps1`. macOS und Linux: `bash setup/pruefen.sh`. Das Skript sagt dir, ob Git, dein Agent und die Ordner da sind. Fehlermeldungen nicht wegklicken, sondern in `setup/installation.md` nachschauen.
 - [ ] **25–40 Min: Sicherheits-Führerschein.** Arbeite `kurs/sicherheits-fuehrerschein.md` durch. Du zeigst die vier Aufgaben am eigenen Rechner vor. Wer sie zeigt, darf ab jetzt im Vollzugriff arbeiten, also ohne Nachfrage vor jeder Änderung.
 - [ ] **40–45 Min: Überblick holen.** Schreib in deinem Agenten «zeige abläufe». Er listet die Ordner unter `skills/`. Schau dir die Namen an und notiere, welcher dich am meisten anspricht.
