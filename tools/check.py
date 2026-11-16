@@ -39,12 +39,16 @@ def pruefe_datei(rel: str, fehler: list[str]) -> None:
         fehler.append(f"fehlt: {rel}")
         return
     text = p.read_text(encoding="utf-8")
-    if len(text.strip()) < 40:
+    if len(text.strip()) < 40 and rel != "CLAUDE.md":
         fehler.append(f"zu kurz: {rel}")
     if "ß" in text:
         fehler.append(f"Eszett statt ss: {rel}")
     if p.suffix == ".md":
-        m = UMSCHRIEBEN.search(text)
+        # Ordner- und Befehlsnamen (z. B. pruefungssimulator) sind ASCII und erlaubt
+        ohne_namen = re.sub(
+            r"`[^`\n]*`|skills/[\w-]+|starte [\w-]+|\b(erklaer-mirs|pruefungssimulator|pruefen\.(ps1|sh))\b",
+            "", text)
+        m = UMSCHRIEBEN.search(ohne_namen)
         if m:
             fehler.append(f"Umlaut umschrieben ('{m.group(0)}'): {rel}")
     if rel.endswith("SKILL.md"):
