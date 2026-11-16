@@ -46,8 +46,8 @@ if ($git) {
     $treffer = (git rev-parse --show-toplevel) 2>$null
     $inRepo = -not [string]::IsNullOrWhiteSpace($treffer)
 }
-Zeige ($inRepo) "der aktuelle Ordner ist ein Git-Repo" "Im richtigen Ordner sein (cd ki-tutor-kurs) oder git init ausführen."
-Zeige (Test-Path -Path "AGENTS.md" -PathType Leaf) "AGENTS.md liegt im Ordner" "Du bist vermutlich im falschen Ordner. Wechsle in den Ordner ki-tutor-kurs."
+Zeige ($inRepo) "der aktuelle Ordner ist ein Git-Repo" "Im richtigen Ordner sein (cd in deinen Kursordner) oder git init ausführen."
+Zeige (Test-Path -Path "AGENTS.md" -PathType Leaf) "AGENTS.md liegt im Ordner" "Du bist vermutlich im falschen Ordner. Wechsle in deinen Kursordner (ff26c-ki-tutor-...)."
 
 # 5. mein-stoff/ existiert
 Zeige (Test-Path -Path "mein-stoff" -PathType Container) "der Ordner mein-stoff/ existiert" "Ordner von Hand anlegen: mkdir mein-stoff"

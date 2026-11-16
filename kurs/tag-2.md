@@ -1,6 +1,6 @@
 # Tag 2: Bauen
 
-**Ziel des Tages:** Du hast einen der fünf Abläufe an deinen eigenen Berufsstoff angepasst oder mit `skills/_vorlage/` einen eigenen gebaut, und du hast damit mindestens einmal wirklich gelernt.
+**Ziel des Tages:** Du hast einen der sechs Lernabläufe an deinen eigenen Berufsstoff angepasst oder mit `skills/_vorlage/` einen eigenen gebaut, und du hast damit mindestens einmal wirklich gelernt.
 
 **Gesamtzeit:** 90 Minuten, davon 10 Minuten Ethik-Ecke.
 
@@ -10,15 +10,17 @@
 - Der Sicherheits-Führerschein ist vorgezeigt, du darfst im Vollzugriff arbeiten.
 - Ein Thema, das du lernen musst, und die dazugehörigen Unterlagen als Datei (PDF, Text, Foto des Skripts).
 - Deine Notiz aus Tag 1: welcher Ablauf, welches Fach, was du ändern willst.
+- **Bevor du den Agenten startest:** Kursdateien auffrischen, damit du die verbesserte Fassung hast. Die fünf Befehle stehen in `setup/hilfe.md`, Abschnitt 6, und die Lehrperson zeigt sie an der Wand. Tippe sie im Terminal im Kursordner.
 - Erste Nachricht an den Agenten: **«starte kurs»**, dann Tag 2 wählen.
+- An Tag 1 gefehlt? Sag es dem Agenten gleich nach «starte kurs». Erst Repo, Prüfskript und Führerschein, dann Tag 2 (`setup/hilfe.md`, Abschnitt 5).
 
 ## Schritte
 
 - [ ] **0–5 Min: Ankommen und Ziel.** Lies das Ziel oben. Entscheide in einem Satz, was am Ende des Tages fertig sein soll.
 - [ ] **5–10 Min: Stand sichern.** Vor jeder Sitzung: `git add -A` und dann `git commit -m "Stand vor Tag 2"`. So kannst du später zurückspringen, wenn etwas kaputtgeht.
-- [ ] **10–15 Min: Stoff ablegen.** Kopiere deine Unterlagen nach `mein-stoff/` in einen Unterordner mit deinem Thema. Dieser Ordner ist absichtlich nicht im Git: fremde Skripte dürfen nicht in einen öffentlichen Fork. Keine Namen von Lehrpersonen, keine Noten, keine Fotos von Mitschülerinnen und Mitschülern.
+- [ ] **10–15 Min: Stoff ablegen.** Kopiere deine Unterlagen nach `mein-stoff/` in einen Unterordner mit deinem Thema. Dieser Ordner ist absichtlich nicht im Git: fremde Skripte gehören nicht auf GitHub, auch nicht in ein privates Repo. Keine Namen von Lehrpersonen, keine Noten, keine Fotos von Mitschülerinnen und Mitschülern.
 - [ ] **15–45 Min: Ablauf anpassen oder bauen.** Zwei Wege, wähle einen:
-  - **Anpassen:** Kopiere einen der fünf Abläufe aus `skills/` in einen neuen Ordner unter `skills/`, zum Beispiel `skills/abfrager-mechanik/` (der Ordner `skills/abfrager/` ist der Abfrager). Der Ordnername ist der Aufrufname: «starte abfrager-mechanik». Ändere den Abschnitt `Anpassen` und die Stellen, die dein Fach betreffen: Fachwörter, Beispiele, was der Tutor fragen soll.
+  - **Anpassen:** Kopiere einen der sechs Lernabläufe aus `skills/` in einen neuen Ordner unter `skills/`, zum Beispiel `skills/abfrager-mechanik/` (der Ordner `skills/abfrager/` ist der Abfrager). Der Ordnername ist der Aufrufname: «starte abfrager-mechanik». Ändere den Abschnitt `Anpassen` und die Stellen, die dein Fach betreffen: Fachwörter, Beispiele, was der Tutor fragen soll.
   - **Neu bauen:** Kopiere `skills/_vorlage/SKILL.md` in einen neuen Ordner und fülle alle Abschnitte aus. Ein Ablauf braucht genau einen benannten didaktischen Grundsatz und muss mit Kontrollfragen und einem Lernjournal-Eintrag enden.
   - In beiden Fällen: Kopfzeile (`name:`, `description:`) nicht vergessen. `name:` muss genau wie der Ordner heissen.
 - [ ] **45–50 Min: Pause.**
@@ -35,6 +37,8 @@
 - Ein Eintrag im Lernjournal, der beschreibt, was du geändert hast.
 
 ## Wenn du nicht weiterkommst
+
+Anmelden, Push-Fehler, Modus des Agenten, zu spät oder gefehlt: `setup/hilfe.md`.
 
 1. **Der Agent startet deinen Ablauf nicht.** Häufigste Ursache: `name:` im Kopf ist nicht gleich dem Ordnernamen. Prüfe beides Zeichen für Zeichen. Zweite Ursache: der Ordner liegt nicht direkt unter `skills/`, sondern eine Ebene zu tief.
 2. **Der Ablauf fühlt sich falsch an, du weisst aber nicht warum.** Frag den Agenten: «Lies skills/<dein-name>/SKILL.md und sage mir, welche Stelle gegen den didaktischen Grundsatz verstösst.» Vergleiche mit dem Original, das du kopiert hast — was hast du beim Kopieren verloren?

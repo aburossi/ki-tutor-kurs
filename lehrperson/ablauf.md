@@ -8,12 +8,14 @@ Die Ablaufblätter der Lernenden liegen in `kurs/` (`tag-1.md`, `tag-2.md`, `tag
 
 **Vor Kurstag 1:**
 
-- Link zum Repo, mit dem Auftrag «klonen oder forken», und der Hinweis, dass kein Konto nötig ist, wenn geklont wird.
+- Einladungen in die Organisation `freifach-ki` an die bbw-Adressen (Classroom 50, Roster → «Add member»), mindestens zwei Tage vorher. Dazu der Link `ANLEITUNG.md`. Wer kein GitHub-Konto hat, legt es beim Annehmen an.
 - Die Aufforderung, den eigenen Agenten (OpenCode, Claude Code oder Codex) installiert und einmal gestartet zu haben. Wer das nicht hat, kommt 15 Minuten früher.
 - Ein Thema aus dem eigenen Berufsstoff, das bis zur nächsten Prüfung wirklich gekonnt sein muss. Wer keines findet, bekommt von Ihnen eines genannt.
 - Ein Steckdosenverteiler pro Tischgruppe. Akku leeren ist der häufigste Grund für Ausfälle.
 
 **Vor Kurstag 2:**
+
+- Die fünf Befehle zum Auffrischen (`setup/hilfe.md`, Abschnitt 6) an die Wand. Die Lernenden tippen sie vor «starte kurs». Gilt auch vor Kurstag 3.
 
 - Erinnerung: Unterlagen als Datei mitbringen, der Ordner `mein-stoff/` ist nicht im Git.
 - Kurze Rückmeldung an die Gruppe, wie viele den Sicherheits-Führerschein an Tag 1 geschafft haben und wer ihn nachholt. Nachholen kostet 10 Minuten und geht vor allem anderen.
@@ -33,7 +35,7 @@ Ziel: Repo läuft, Führerschein vorgezeigt, `prompting-tutor` einmal am eigenen
 | Zeit | Phase | Was die Lehrperson tut | Was die Lernenden tun | Material |
 | --- | --- | --- | --- | --- |
 | 0–5 | Ankommen | Begrüssen, Ziel des Tages an die Wand schreiben, keine Erklärungen zum Setup | Hinsetzen, Terminal öffnen, Ziel lesen | Beamer oder Wandtafel, `kurs/tag-1.md` |
-| 5–15 | Repo holen | Herumgehen, nur bei Klon-Fehlern helfen, Adresse an die Wand | Klonen oder forken, in den Ordner wechseln | Repo-Link, WLAN |
+| 5–15 | Repo holen | Herumgehen, nur bei Klon-Fehlern helfen, Adresse an die Wand | Aufgabe annehmen, privates Repo klonen, Remote `vorlage` eintragen, «starte kurs» | `ANLEITUNG.md`, WLAN |
 | 15–25 | Setup prüfen | Sammelstelle für Fehlermeldungen, häufige Fälle aus `setup/installation.md` bereithalten | `pruefen.ps1` bzw. `pruefen.sh` ausführen | `setup/installation.md` |
 | 25–40 | Sicherheits-Führerschein | Vier Aufgaben an einem Rechner vormachen, dann einzeln abnehmen und abhaken | Die vier Aufgaben am eigenen Rechner zeigen | `kurs/sicherheits-fuehrerschein.md`, Abhakliste |
 | 40–45 | Überblick | «zeige abläufe» einmal im Plenum zeigen | Selbst ausführen, Namen der Abläufe notieren | Beamer |
@@ -49,7 +51,7 @@ Ziel: ein angepasster oder eigener Ablauf, mindestens eine echte Lern-Sitzung da
 
 | Zeit | Phase | Was die Lehrperson tut | Was die Lernenden tun | Material |
 | --- | --- | --- | --- | --- |
-| 0–5 | Ankommen | Ziel nennen, die fünf Abläufe an die Wand schreiben | Entscheiden, welchen Ablauf sie anpassen | `kurs/tag-2.md`, `skills/README.md` |
+| 0–5 | Ankommen | Ziel nennen, die sechs Lernabläufe an die Wand schreiben | Entscheiden, welchen Ablauf sie anpassen | `kurs/tag-2.md`, `skills/README.md` |
 | 5–10 | Stand sichern | `git add -A` und `git commit` einmal im Plenum zeigen | Commit machen, `git log --oneline` prüfen | Repo |
 | 10–15 | Stoff ablegen | Datenschutz-Regel in einem Satz wiederholen: keine Namen, keine Noten, keine Fotos von Personen | Unterlagen nach `mein-stoff/<thema>/` kopieren | Eigene Unterlagen |
 | 15–45 | Bauen | Rundgang, Fragen sammeln, nach 15 Minuten einen Zwischenstand ansagen | Ablauf kopieren und anpassen oder mit `skills/_vorlage/` neu bauen | `skills/_vorlage/SKILL.md` |
@@ -80,7 +82,7 @@ Ziel: Ablauf funktioniert auf einem zweiten Fach oder ist getestet, zwei Minuten
 - **Agent startet im falschen Ordner.** Der Agent liest `AGENTS.md` nur, wenn er aus dem Kursordner gestartet wurde. Symptom: «zeige abläufe» liefert nichts. Antwort: `cd` in den Kursordner, neu starten.
 - **Nachfrage-Modus bleibt an.** Wer den Führerschein hat, aber im Nachfrage-Modus weiterarbeitet, verliert die halbe Zeit an Klicks. Prüfen Sie das beim Rundgang.
 - **`git reset --hard` ohne Commit.** Der häufigste echte Datenverlust im Kurs. Vor der Übung in Aufgabe 4 nochmals laut sagen: alles seit diesem Stand ist weg.
-- **Unterlagen im Git.** `mein-stoff/` ist nur über `.gitignore` geschützt. Wer die Datei löscht oder `git add -f` benutzt, hat fremde Skripte im Fork. Beim Commit kurz `git status` mitlesen.
+- **Unterlagen im Git.** `mein-stoff/` ist nur über `.gitignore` geschützt. Wer die Datei löscht oder `git add -f` benutzt, hat fremde Skripte in seinem Repo auf GitHub. Beim Commit kurz `git status` mitlesen.
 - **Zu viel Bauen, zu wenig Lernen.** An Tag 2 kippt die Gruppe gern ins Basteln. Die 20 Minuten Lernen sind der Kern des Tages, nicht die Anpassung.
 - **Kurzvorstellung überzieht.** Bei 14 Personen ist die Vorstellung der längste Block. Wer nicht unterbricht, verliert die Ethik-Ecke.
 - **Ein Rechner ohne Agent.** Wer an Tag 1 keinen lauffähigen Agenten hat, arbeitet zu zweit mit. Nicht am Setup eines einzelnen Rechners die Gruppe aufhalten.

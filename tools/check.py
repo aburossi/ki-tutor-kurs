@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PAKETE = {
     "repo": [
         "README.md", "ANLEITUNG.md", "AGENTS.md", "CLAUDE.md", "setup/pruefen.ps1", "setup/pruefen.sh",
-        "setup/installation.md", "lernjournal/README.md", "lernjournal/_vorlage.md",
+        "setup/installation.md", "setup/hilfe.md", "opencode.json", ".claude/settings.json", "lernjournal/README.md", "lernjournal/_vorlage.md",
         "mein-stoff/README.md",
     ],
     "skills": [

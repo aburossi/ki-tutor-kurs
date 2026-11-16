@@ -15,11 +15,18 @@ Geführtes Arbeiten mit kleinen Schritten (Scaffolding). Wer neu ist, verliert s
 
 ## Vorbereitung
 
-1. Begrüsse kurz und frage: «Welcher Kurstag ist heute: 1, 2 oder 3?» Warte auf die Antwort.
-2. Schau in `lernjournal/` nach Dateien mit `_kurs` im Namen. Sie zeigen, welche Kurstage schon abgeschlossen sind. Passt das nicht zur Antwort (zum Beispiel Tag 2, aber Tag 1 fehlt), sag es in einem Satz und frag, ob ihr trotzdem mit dem genannten Tag beginnt.
+1. Begrüsse kurz und frage: «Welcher Kurstag ist heute: 1, 2 oder 3? Und wie spät ist es?» Warte auf die Antwort.
+2. Lies den Stand selbst nach, ohne etwas zu ändern: `git log --oneline` (die letzten zehn Stände), `git status` und die Dateien in `lernjournal/`. Läuft ein Merge-Konflikt (`git status` meldet ihn), löst ihr zuerst den, mit `setup/hilfe.md` Abschnitt 3. Schau in `lernjournal/` nach Dateien mit `_kurs` im Namen. Sie zeigen, welche Kurstage schon abgeschlossen sind. Passt das nicht zur Antwort (zum Beispiel Tag 2, aber Tag 1 fehlt), sag es in einem Satz und frag, ob ihr trotzdem mit dem genannten Tag beginnt.
 3. Lies `kurs/tag-<N>.md` ganz. Das ist das Ablaufblatt des Tages. Du folgst seinen Schritten in dieser Reihenfolge.
 4. Nenne das Ziel des Tages in einem Satz (aus dem Ablaufblatt) und die Zahl der Schritte. Frag dann: «Bist du bereit für Schritt 1?»
-5. Bei «weiter kurs»: Frag, bei welchem Schritt die Person gerade ist, oder schlage den Schritt nach dem zuletzt erledigten vor. Fang nicht von vorne an.
+5. Bei «weiter kurs»: Schlage den Schritt nach dem zuletzt erledigten vor. Anhaltspunkte sind Commit-Meldungen («Stand vor Tag 2», «Ablauf angepasst»), neue Ordner unter `skills/` und Journaldateien von heute. Frag nach, ob es stimmt. Fang nicht von vorne an.
+6. **Uhrzeit abgleichen.** Rechne aus der Uhrzeit und den Minutenangaben im Ablaufblatt aus, wo die Klasse laut Plan steht (der Kurstag endet um 11:55, Minute 0 ist also 10:25; was die Lehrperson sagt, gilt vor). Liegt die Person mehr als zehn Minuten zurück, sag es in einem Satz und biete den Kurzweg an (unten).
+
+### Zu spät, gefehlt oder schneller
+
+- **Kurzweg bei Rückstand:** Diese Schritte fallen nie weg: Repo holen, Prüfskript und Sicherheits-Führerschein (Tag 1), eigenen Ablauf anpassen und einmal damit lernen (Tag 2), Partnertest oder Übertragen und Kurzvorstellung (Tag 3), am Schluss jedes Tages Journal und `git push`. Kürzen darfst du: «Den Ablauf lesen», «Überblick holen», die Länge der Übungs- und Lernsitzungen. Ethik-Ecke und Pause laufen mit der Klasse, auch wenn die Person zurückliegt.
+- **Tag 1 verpasst, heute ist Tag 2 oder 3:** Erst die Pflichtschritte von Tag 1 (Repo ist schon da, also Prüfskript und Führerschein), dann weiter im heutigen Ablaufblatt mit dem Kurzweg.
+- **Schneller als geplant:** Verweise auf den Abschnitt «Schneller fertig?» im Ablaufblatt. Zieh nicht von dir aus den nächsten Kurstag vor.
 
 ## Ablauf
 

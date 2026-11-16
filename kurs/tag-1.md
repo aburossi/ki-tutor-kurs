@@ -32,8 +32,10 @@
 
 ## Wenn du nicht weiterkommst
 
+Anmelden, Push-Fehler, Modus des Agenten, zu spät oder gefehlt: `setup/hilfe.md`.
+
 1. **Das Setup-Skript bricht ab.** Lies die letzte Zeile der Fehlermeldung, nicht die erste. Meistens fehlt Git oder der Agent ist nicht im Suchpfad. `setup/installation.md` nennt die häufigsten Fälle. Wenn es nach 5 Minuten nicht läuft: Nachbarin oder Nachbar fragen, nicht weiterprobieren.
-2. **Der Agent findet die Abläufe nicht.** Prüfe, ob du wirklich im Kursordner bist (`ff26c-ki-tutor-<dein-github-name>` oder `ki-tutor-kurs`) (`pwd` bzw. `dir`). Schreib dann «zeige abläufe» noch einmal. Wenn die Liste leer bleibt, fehlt `AGENTS.md` im Ordner — dann neu klonen.
+2. **Der Agent findet die Abläufe nicht.** Prüfe, ob du wirklich im Kursordner bist (`ff26c-ki-tutor-<dein-github-name>`; prüfen mit `pwd`). Schreib dann «zeige abläufe» noch einmal. Wenn die Liste leer bleibt, fehlt `AGENTS.md` im Ordner — dann neu klonen.
 3. **Du kommst beim Üben nicht weiter, weil der Agent zu viel redet.** Schreib: «Eine Frage auf einmal, warte auf meine Antwort.» Das ist erlaubt und steht so im Ablauf. Wenn es dann noch nicht passt, notiere die Stelle für Tag 2 — dort darfst du den Ablauf ändern.
 
 ## Schneller fertig?

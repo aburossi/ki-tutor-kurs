@@ -14,7 +14,7 @@ Der Führerschein hat vier Regeln. Jede Regel hat einen Grund und einen Handgrif
 pwd
 ```
 
-Windows-Eingabeaufforderung: `cd`. Es muss ein Pfad sein, der auf deinen Kursordner endet (`ff26c-ki-tutor-<dein-github-name>` oder `ki-tutor-kurs`). Wenn nicht, mit `cd` in den Kursordner wechseln, bevor du den Agenten startest. Starte den Agenten immer aus diesem Ordner heraus, nie aus dem Benutzerordner.
+Windows-Eingabeaufforderung: `cd`. Es muss ein Pfad sein, der auf deinen Kursordner endet (`ff26c-ki-tutor-<dein-github-name>`). Wenn nicht, mit `cd` in den Kursordner wechseln, bevor du den Agenten startest. Starte den Agenten immer aus diesem Ordner heraus, nie aus dem Benutzerordner.
 
 **Zusatz:** Werkzeuge haben einen Nachfrage-Modus, in dem der Agent vor jeder Änderung fragt. Das ist Regel 4 und gehört dazu.
 
@@ -59,7 +59,7 @@ git reset --hard <commit>
 
 - Keine Datei mit Passwörtern, Schlüsseln oder Kundendaten in den Ordner legen. Auch nicht «nur kurz».
 - Unterlagen von Lehrpersonen nur nach `mein-stoff/`. Dieser Ordner ist absichtlich nicht im Git, weil fremde Skripte urheberrechtlich geschützt sind.
-- Im Lernjournal keine Namen anderer Personen, keine Noten, nichts Privates. Das Journal ist versioniert; wer den eigenen Fork veröffentlicht, macht es öffentlich.
+- Im Lernjournal keine Namen anderer Personen, keine Noten, nichts Privates. Das Journal ist versioniert und landet mit `git push` in deinem Repo, dort liest es die Lehrperson.
 - Wenn du eine Datei mit verdächtigem Inhalt findest: nicht öffnen lassen, nicht committen, der Lehrperson sagen.
 
 **Handgriff zum Prüfen:** `git status` zeigt, was Git sieht. Steht dort eine Datei, die nicht in den Kurs gehört, nicht committen, sondern löschen oder verschieben.
@@ -80,7 +80,7 @@ Vier Aufgaben, am eigenen Rechner, vor der Lehrperson oder vor einer anderen Per
 Führe `pwd` aus und erkläre in einem Satz, woran man sieht, dass es der Kursordner ist. Nenne eine Datei, die es nur im Kursordner gibt.
 
 **Aufgabe 2: Einen Stand sichern.**
-Lege eine neue Datei an, zum Beispiel `mein-stoff/test.txt`, mit einem Satz Inhalt. Dann `git add -A` und `git commit -m "Test"`. Zeige mit `git log --oneline`, dass der Stand da ist, und nenne den Commit-Hash.
+Lege im Kursordner eine neue Datei `test.txt` an, mit einem Satz Inhalt. (Nicht in `mein-stoff/`: Diesen Ordner sieht Git absichtlich nicht, der Commit bliebe leer.) Dann `git add -A` und `git commit -m "Test"`. Zeige mit `git log --oneline`, dass der Stand da ist, und nenne den Commit-Hash.
 
 **Aufgabe 3: Eine Datei kaputt machen lassen und einzeln zurückholen.**
 Lass den Agenten eine bestehende Datei verändern, bis sie nicht mehr stimmt, zum Beispiel `kurs/tag-1.md` halb löschen. Dann `git status` zeigen, dann `git restore kurs/tag-1.md`. Zeige, dass die Datei wieder wie vorher ist.

@@ -1,7 +1,7 @@
 # Installation und häufige Probleme
 
 Hier steht, was du vor dem Kurs einmal einrichten musst. Rechne mit etwa 15 Minuten.
-Alles ist gratis. Du brauchst kein GitHub-Konto, wenn du Weg A aus dem README nimmst.
+Git ist gratis. Im Kurs brauchst du ein GitHub-Konto (siehe `ANLEITUNG.md`). Steckst du beim Anmelden, Hochladen oder im Modus deines Agenten fest: `setup/hilfe.md`.
 
 ## 1. Git installieren
 
@@ -30,8 +30,8 @@ Installiere Git mit deinem Paketmanager, zum Beispiel `sudo apt install git`.
 Git schreibt in jede Sicherung, wer sie gemacht hat. Das bleibt lokal.
 
 ```bash
-git config --global user.name "Dein Name"
-git config --global user.email "du@beispiel.ch"
+git config --global user.name "dein-github-name"
+git config --global user.email "deine@bbw-adresse"
 ```
 
 Prüfen: `git config --global user.name` zeigt deinen Namen.
@@ -47,7 +47,7 @@ Du brauchst einen der drei. Nimm den, den du schon kennst.
 | Codex | `https://developers.openai.com/codex` | `codex` |
 
 Folge der Anleitung auf der Seite. Danach öffnest du dein Terminal im Ordner
-`ki-tutor-kurs` und startest den Agenten mit dem Befehl in der dritten Spalte.
+`ff26c-ki-tutor-<dein-github-name>` und startest den Agenten mit dem Befehl in der dritten Spalte.
 
 ## 4. Der Nachfrage-Modus
 
@@ -66,10 +66,10 @@ stell es auf «fragen» statt «automatisch».
 | Problem | Ursache | Lösung |
 | --- | --- | --- |
 | `git: command not found` | Git ist nicht installiert oder das Terminal ist alt. | Git installieren, Terminal schliessen und neu öffnen. |
-| `fatal: not a git repository` | Du bist nicht im Ordner `ki-tutor-kurs`. | `cd ki-tutor-kurs`, dann erneut versuchen. |
+| `fatal: not a git repository` | Du bist nicht im Kursordner. | Mit `cd` in den Ordner `ff26c-ki-tutor-<dein-github-name>` wechseln, dann erneut versuchen. |
 | `Please tell me who you are` | Name oder Mail fehlen in Git. | Die zwei `git config`-Befehle aus Abschnitt 2 ausführen. |
 | Umlaute erscheinen als komische Zeichen | Das Terminal nutzt die falsche Zeichentabelle. | Windows: in den Terminal-Einstellungen UTF-8 wählen. Sonst Dateien mit einem Editor öffnen. |
-| Der Agent findet `AGENTS.md` nicht | Der Agent wurde im falschen Ordner gestartet. | Agent im Ordner `ki-tutor-kurs` starten, nicht im Ordner darüber. |
+| Der Agent findet `AGENTS.md` nicht | Der Agent wurde im falschen Ordner gestartet. | Agent im Kursordner starten, nicht im Ordner darüber. |
 | `starte ...` macht nichts | Der Agent kennt den Ablauf nicht. | `zeige abläufe` schreiben und den Namen genau so übernehmen. |
 | Skript lässt sich nicht starten (Windows) | PowerShell blockiert Skripte. | `powershell -ExecutionPolicy Bypass -File setup\pruefen.ps1` benutzen. |
 | `Permission denied` beim Skript (macOS) | Die Datei ist nicht ausführbar. | `bash setup/pruefen.sh` aufrufen statt direkt starten. |

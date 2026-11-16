@@ -33,7 +33,7 @@ unverändert stehen.
 
 ## Regel: keine Daten anderer
 
-Das Journal ist versioniert. Wer seinen Fork hochlädt, macht das Journal öffentlich.
+Das Journal ist versioniert. Mit `git push` landet es in deinem privaten Repo, dort liest es die Lehrperson.
 Darum gilt ohne Ausnahme:
 
 - keine Namen anderer Personen (auch nicht von Lehrpersonen oder Mitschülern)

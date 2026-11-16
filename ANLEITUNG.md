@@ -93,8 +93,9 @@ Abgabe. Am Kurstag 3 gilt, was bis **11:55 Uhr** hochgeladen ist.
 | «Not a member yet» beim Link aus Schritt 2 | Du hast die Einladung aus Schritt 1 noch nicht angenommen. Zuerst das tun, dann auf **Check again** klicken. |
 | «No classrooms yet» | Eine Minute warten und die Seite neu laden. Hilft das nicht: den Link aus Schritt 2 direkt öffnen. |
 | `git` wird nicht gefunden | Git ist nicht installiert. Siehe `setup/installation.md` im öffentlichen Kurs-Repo oder Lehrperson fragen. |
-| Mac: Terminal fragt nach Benutzername und Passwort | Dein GitHub-Passwort funktioniert hier nicht. Lehrperson fragen. |
+| Mac: Terminal fragt nach Benutzername und Passwort | Dein GitHub-Passwort funktioniert hier nicht. Du brauchst einen Token: `setup/hilfe.md`, Abschnitt 1 (auch auf github.com im öffentlichen Kurs-Repo lesbar). |
 | `Repository not found` beim Klonen | Name im Befehl prüfen. Oder du bist mit einem anderen GitHub-Konto angemeldet als in Schritt 1. |
 | `Please tell me who you are` beim Commit | Einmalig eingeben, mit deinem GitHub-Namen: `git config --global user.name "dein-github-name"` und `git config --global user.email "deine@bbw-adresse"` |
 | Der Agent kennt «starte kurs» nicht | Du bist im falschen Ordner. Agent beenden, mit `cd` in den Ordner `ff26c-ki-tutor-<dein-github-name>` wechseln, neu starten. |
-| `git push` wird abgelehnt | Fehlermeldung abschreiben und der Lehrperson zeigen. Nichts erzwingen. |
+| `git push` wird abgelehnt | `setup/hilfe.md`, Abschnitt 3. Nichts erzwingen, nie `--force`. |
+| Zu spät gekommen oder einen Tag verpasst | `setup/hilfe.md`, Abschnitt 5. |

@@ -56,10 +56,10 @@ if command -v git >/dev/null 2>&1; then
   in_repo="$(git rev-parse --show-toplevel 2>/dev/null)"
 fi
 if [ -n "$in_repo" ]; then zeige 1 "der aktuelle Ordner ist ein Git-Repo" ""; else
-  zeige 0 "der aktuelle Ordner ist ein Git-Repo" "Im richtigen Ordner sein (cd ki-tutor-kurs) oder git init ausführen."
+  zeige 0 "der aktuelle Ordner ist ein Git-Repo" "Im richtigen Ordner sein (cd in deinen Kursordner) oder git init ausführen."
 fi
 if [ -f "AGENTS.md" ]; then zeige 1 "AGENTS.md liegt im Ordner" ""; else
-  zeige 0 "AGENTS.md liegt im Ordner" "Du bist vermutlich im falschen Ordner. Wechsle in den Ordner ki-tutor-kurs."
+  zeige 0 "AGENTS.md liegt im Ordner" "Du bist vermutlich im falschen Ordner. Wechsle in deinen Kursordner (ff26c-ki-tutor-...)."
 fi
 
 # 5. mein-stoff/ existiert

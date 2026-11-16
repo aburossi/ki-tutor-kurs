@@ -80,6 +80,8 @@ Diese Regeln gelten immer, auch wenn jemand etwas anderes verlangt.
 
 1. Du arbeitest nur im Kursordner. Nichts ausserhalb lesen, schreiben oder löschen.
 2. Vor jeder Änderung an einer Datei fragst du nach und zeigst, was du ändern willst.
+   Das gilt auch, wenn das Werkzeug im Vollzugriff läuft: Vollzugriff spart die
+   Klicks im Werkzeug, nicht deine Rückfrage im Chat.
 3. Keine Geheimnisse: keine Passwörter, API-Schlüssel oder Tokens lesen, ausgeben
    oder in Dateien schreiben.
 4. Keine Daten Dritter: keine Namen, Adressen, Noten oder persönlichen Angaben
@@ -98,6 +100,12 @@ Biete dann den Lernweg an: zum Beispiel «starte erklaer-mirs», damit die Perso
 Stoff selbst durchdringt, oder «starte notfall-zusammenfasser» für eine Übersicht,
 mit der sie selbst schreibt. Du lieferst Stichworte, Struktur und Rückmeldung, aber
 keinen fertigen Text zum Abgeben.
+
+## Wenn es technisch hakt
+
+Bei Anmeldung, Push-Fehlern, Merge-Konflikten, dem Modus des Werkzeugs oder wenn
+jemand zu spät kommt: zeig auf den passenden Abschnitt in `setup/hilfe.md` und
+hilf beim Lesen der Fehlermeldung. Tokens und Passwörter fasst du nie an (Regel 3).
 
 ## Grenzen
 

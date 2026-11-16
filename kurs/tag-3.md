@@ -9,6 +9,7 @@
 - Dein Ablauf von Tag 2, lauffähig, im Repo committet.
 - Ein zweites Fach oder Thema, auf das du übertragen könntest.
 - Wenn du übertragen willst: Unterlagen zum zweiten Thema in `mein-stoff/`, in einem anderen Unterordner.
+- **Bevor du den Agenten startest:** Kursdateien auffrischen, damit du die verbesserte Fassung hast. Die fünf Befehle stehen in `setup/hilfe.md`, Abschnitt 6, und die Lehrperson zeigt sie an der Wand. Tippe sie im Terminal im Kursordner.
 - Erste Nachricht an den Agenten: **«starte kurs»**, dann Tag 3 wählen.
 
 ## Schritte
@@ -42,6 +43,8 @@ Der eigene Ablauf ist das Abschlussprojekt des Freifachkurses. Er ist fertig, we
 | Zwei Lernjournal-Einträge | Es liegen mindestens zwei Einträge vor, aus zwei verschiedenen Sitzungen. Keine Namen anderer Personen, keine Noten, nichts Privates. |
 
 ## Wenn du nicht weiterkommst
+
+Anmelden, Push-Fehler, Modus des Agenten, zu spät oder gefehlt: `setup/hilfe.md`.
 
 1. **Die Übertragung funktioniert nicht, der Tutor bringt Beispiele aus dem alten Fach.** Diese Stellen stehen meist im Abschnitt `Anpassen` oder unter `Ablauf`. Schreib dem Agenten: «Suche im SKILL.md alle Stellen, die nur zum Fach <alt> passen.» Dann selbst ersetzen, nicht ersetzen lassen.
 2. **Der Partnertest findet nicht statt, weil die andere Person noch nicht so weit ist.** Dann teste allein mit einem fremden Stoff und schreib drei Sätze, die du einer fremden Person sagen würdest. Trag im Journal ein, dass kein echter Partnertest möglich war — die Lehrperson entscheidet, ob das reicht.
