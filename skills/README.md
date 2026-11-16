@@ -17,6 +17,9 @@ mit **«starte <name>»**, zum Beispiel «starte abfrager». Dein Agent liest da
 | Notfall-Zusammenfasser | Verdichten plus Abrufen | am Abend vor der Prüfung, wenn wenig Zeit bleibt |
 | Vorlage | — | wenn du einen eigenen Ablauf baust |
 
+Dazu kommt der **Kursbegleiter** `kurs` («starte kurs»). Er ist kein Lernablauf,
+sondern führt dich an jedem Kurstag durch das Ablaufblatt unter `kurs/`.
+
 Der **Name im Befehl** ist immer der Ordnername unter `skills/`: alles klein
 geschrieben, Umlaute ausgeschrieben (ü wird zu ue). Bei «Prüfungssimulator» steht
 also an der Stelle des «ü» ein «ue», ebenso bei den anderen Namen. Die Vorlage

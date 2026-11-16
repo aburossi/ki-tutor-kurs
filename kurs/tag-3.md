@@ -9,6 +9,7 @@
 - Dein Ablauf von Tag 2, lauffähig, im Repo committet.
 - Ein zweites Fach oder Thema, auf das du übertragen könntest.
 - Wenn du übertragen willst: Unterlagen zum zweiten Thema in `mein-stoff/`, in einem anderen Unterordner.
+- Erste Nachricht an den Agenten: **«starte kurs»**, dann Tag 3 wählen.
 
 ## Schritte
 
@@ -19,7 +20,7 @@
 - [ ] **45–50 Min: Pause.**
 - [ ] **50–75 Min: Kurzvorstellung.** Zwei Minuten pro Person. Zeig deinen Ablauf am Bildschirm, sag in einem Satz den didaktischen Grundsatz, zeig eine Stelle, die du selbst geändert hast, und den Lernjournal-Eintrag. Keine Folien. Wer zuhört, schreibt eine Frage auf, höchstens eine pro Person.
 - [ ] **75–85 Min: Ethik-Ecke 3.** `kurs/ethik-ecke-3.md`, 10 Minuten.
-- [ ] **85–90 Min: Kursrückmeldung.** Die Fragen der Kursleitung, ehrlich ausgefüllt. Danach letzter Commit: `git add -A`, `git commit -m "Abschluss"`.
+- [ ] **85–90 Min: Kursrückmeldung.** Die Fragen der Kursleitung, ehrlich ausgefüllt. Danach letzter Commit und Abgabe: `git add -A`, `git commit -m "Abschluss"`, `git push`. Was bis 11:55 Uhr hochgeladen ist, gilt als abgegeben.
 
 ## Am Ende des Tages liegt vor
 

@@ -69,7 +69,7 @@ fi
 
 echo
 if [ "$fehlt" -eq 0 ]; then
-  echo "Alles bereit. Starte deinen Agenten und schreibe: starte prompting-tutor"
+  echo "Alles bereit. Starte deinen Agenten und schreibe: starte kurs"
 else
   echo "Fertig mit $fehlt offenen Punkten. Oben steht bei jedem Punkt ein Hinweis."
   echo "Mehr Hilfe: setup/installation.md"

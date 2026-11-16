@@ -14,7 +14,7 @@ Der Führerschein hat vier Regeln. Jede Regel hat einen Grund und einen Handgrif
 pwd
 ```
 
-Windows-Eingabeaufforderung: `cd`. Es muss ein Pfad sein, der auf `ki-tutor-kurs` endet. Wenn nicht, mit `cd` in den Kursordner wechseln, bevor du den Agenten startest. Starte den Agenten immer aus diesem Ordner heraus, nie aus dem Benutzerordner.
+Windows-Eingabeaufforderung: `cd`. Es muss ein Pfad sein, der auf deinen Kursordner endet (`ff26c-ki-tutor-<dein-github-name>` oder `ki-tutor-kurs`). Wenn nicht, mit `cd` in den Kursordner wechseln, bevor du den Agenten startest. Starte den Agenten immer aus diesem Ordner heraus, nie aus dem Benutzerordner.
 
 **Zusatz:** Werkzeuge haben einen Nachfrage-Modus, in dem der Agent vor jeder Änderung fragt. Das ist Regel 4 und gehört dazu.
 

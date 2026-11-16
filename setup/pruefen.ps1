@@ -54,7 +54,7 @@ Zeige (Test-Path -Path "mein-stoff" -PathType Container) "der Ordner mein-stoff/
 
 Write-Host ""
 if ($anzahlFehlt -eq 0) {
-    Write-Host "Alles bereit. Starte deinen Agenten und schreibe: starte prompting-tutor" -ForegroundColor Green
+    Write-Host "Alles bereit. Starte deinen Agenten und schreibe: starte kurs" -ForegroundColor Green
 } else {
     Write-Host ("Fertig mit " + $anzahlFehlt + " offenen Punkten. Oben steht bei jedem Punkt ein Hinweis.") -ForegroundColor Yellow
     Write-Host "Mehr Hilfe: setup/installation.md"

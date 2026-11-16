@@ -10,6 +10,7 @@
 - Der Sicherheits-Führerschein ist vorgezeigt, du darfst im Vollzugriff arbeiten.
 - Ein Thema, das du lernen musst, und die dazugehörigen Unterlagen als Datei (PDF, Text, Foto des Skripts).
 - Deine Notiz aus Tag 1: welcher Ablauf, welches Fach, was du ändern willst.
+- Erste Nachricht an den Agenten: **«starte kurs»**, dann Tag 2 wählen.
 
 ## Schritte
 
@@ -24,7 +25,7 @@
 - [ ] **50–70 Min: Damit lernen.** Schreib «starte <dein name>» und arbeite eine ganze Sitzung durch. Lerne, statt zu basteln: Antworten tippen, nachdenken, Fehler machen. Wenn du dauernd am Ablauf herumschraubst, brich ab und notiere die Stelle.
 - [ ] **70–75 Min: Nachziehen.** Was beim Lernen gestört hat, änderst du jetzt im SKILL.md. Danach `git add -A` und `git commit -m "Ablauf angepasst"`.
 - [ ] **75–85 Min: Ethik-Ecke 2.** `kurs/ethik-ecke-2.md`, 10 Minuten: kurzer Input, Diskussionsfrage, Abstimmung.
-- [ ] **85–90 Min: Journal.** Eintrag nach `lernjournal/_vorlage.md`: was du gebaut hast, was beim Lernen geholfen hat, was nicht.
+- [ ] **85–90 Min: Journal.** Eintrag nach `lernjournal/_vorlage.md`: was du gebaut hast, was beim Lernen geholfen hat, was nicht. Danach sichern und hochladen: `git add -A`, `git commit -m "Kurstag 2"`, `git push`.
 
 ## Am Ende des Tages liegt vor
 

@@ -15,7 +15,7 @@ PAKETE = {
         "skills/README.md", "skills/_vorlage/SKILL.md",
         *[f"skills/{n}/SKILL.md" for n in (
             "prompting-tutor", "abfrager", "sokrates", "erklaer-mirs",
-            "pruefungssimulator", "notfall-zusammenfasser")],
+            "pruefungssimulator", "notfall-zusammenfasser", "kurs")],
     ],
     "kurs": [
         "kurs/tag-1.md", "kurs/tag-2.md", "kurs/tag-3.md",
@@ -91,7 +91,7 @@ def main() -> int:
     if "repo" in wahl and (ROOT / "AGENTS.md").is_file():
         agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
         for n in ("prompting-tutor", "abfrager", "sokrates", "erklaer-mirs",
-                  "pruefungssimulator", "notfall-zusammenfasser"):
+                  "pruefungssimulator", "notfall-zusammenfasser", "skills/kurs"):
             if n not in agents:
                 fehler.append(f"AGENTS.md nennt Ablauf '{n}' nicht")
     for f in fehler:

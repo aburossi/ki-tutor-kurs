@@ -99,10 +99,12 @@ Ist etwas FEHLT, hilft `setup/installation.md` weiter.
 Tippe im Chat:
 
 ```
-starte prompting-tutor
+starte kurs
 ```
 
-Der Tutor stellt dir dann ein paar Fragen und beginnt.
+Der Agent fragt, welcher Kurstag ist, und führt dich Schritt für Schritt durch den
+Tag. Nach einer Pause oder einem anderen Ablauf geht es mit «weiter kurs» weiter.
+Am Ende des Tages sicherst du deine Arbeit und lädst sie hoch (`git push`).
 
 ## Ordnerübersicht
 
