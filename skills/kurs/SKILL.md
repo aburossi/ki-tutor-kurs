@@ -24,8 +24,8 @@ Geführtes Arbeiten mit kleinen Schritten (Scaffolding). Wer neu ist, verliert s
 
 ### Zu spät, gefehlt oder schneller
 
-- **Kurzweg bei Rückstand:** Diese Schritte fallen nie weg: Repo holen, Prüfskript und Sicherheits-Führerschein (Tag 1), eigenen Ablauf anpassen und einmal damit lernen (Tag 2), Partnertest oder Übertragen und Kurzvorstellung (Tag 3), am Schluss jedes Tages Journal und `git push`. Kürzen darfst du: «Den Ablauf lesen», «Überblick holen», die Länge der Übungs- und Lernsitzungen. Ethik-Ecke und Pause laufen mit der Klasse, auch wenn die Person zurückliegt.
-- **Tag 1 verpasst, heute ist Tag 2 oder 3:** Erst die Pflichtschritte von Tag 1 (Repo ist schon da, also Prüfskript und Führerschein), dann weiter im heutigen Ablaufblatt mit dem Kurzweg.
+- **Kurzweg bei Rückstand:** Diese Schritte fallen nie weg: Repo holen und Prüfskript (Tag 1), eigenen Ablauf anpassen und einmal damit lernen (Tag 2), Partnertest oder Übertragen und Kurzvorstellung (Tag 3), am Schluss jedes Tages Journal und `git push`. Kürzen darfst du: den Sicherheits-Führerschein (nur Station 2 und 3), «Den Ablauf lesen», «Überblick holen», die Länge der Übungs- und Lernsitzungen. Ethik-Ecke und Pause laufen mit der Klasse, auch wenn die Person zurückliegt.
+- **Tag 1 verpasst, heute ist Tag 2 oder 3:** Erst die Pflichtschritte von Tag 1 (Repo ist schon da, also das Prüfskript; den Führerschein nur, wenn Zeit bleibt), dann weiter im heutigen Ablaufblatt mit dem Kurzweg.
 - **Schneller als geplant:** Verweise auf den Abschnitt «Schneller fertig?» im Ablaufblatt. Zieh nicht von dir aus den nächsten Kurstag vor.
 
 ## Ablauf
@@ -41,7 +41,7 @@ Für jeden Schritt aus dem Ablaufblatt gilt dieselbe Runde:
 Besondere Schritte:
 
 - **Repo holen** ist schon erledigt, wenn du läufst. Bestätige es und überspring den Schritt.
-- **Sicherheits-Führerschein:** Geh `kurs/sicherheits-fuehrerschein.md` Regel für Regel durch. Die Person führt jeden Handgriff selbst aus. Den Führerschein vergibt die Lehrperson: Sag zum Schluss «Zeig die vier Aufgaben jetzt der Lehrperson.» und warte.
+- **Sicherheits-Führerschein:** Eine spielerische Übung, keine Prüfung. Geh `kurs/sicherheits-fuehrerschein.md` Station für Station durch: kurz erklären, warum, dann die Mission ansagen. Die Person tippt die Git-Befehle selbst. Bei Station 3 löschst du auf ihre Bitte die halbe Datei (nach Rückfrage, Regel 2), damit sie die Rettung erlebt. Am Schluss stellst du drei oder vier der Fragen, eine nach der anderen, und gibst zu jeder Antwort kurz Rückmeldung. Dann das Abzeichen «Führerschein» in `ABZEICHEN.md` abhaken lassen. Bestehen spielt keine Rolle; wer unsicher bleibt, darf eine Station später wiederholen.
 - **Ein Lernablauf** (zum Beispiel «Üben mit `prompting-tutor`» oder «Damit lernen»): Sag der Person, sie soll «starte <name>» schreiben. Dann gilt dieser Ablauf, bis er mit Kontrollfragen und Journal endet. Danach fragst du: «Weiter im Kurstag?»
 - **Ablauf anpassen oder bauen** (Tag 2 und 3): Die Person schreibt den Ablauf selbst, denn er ist ihr Abschlussprojekt. Du darfst einen Ordner kopieren und `name:` anpassen, nachdem du gefragt hast. Zum Inhalt gibst du Rückmeldung mit den drei Prüffragen aus `skills/README.md`: eine Stärke, höchstens zwei Verbesserungen. Du schreibst keine Abschnitte fertig.
 - **Ethik-Ecke, Pause, Kurzvorstellung, Partnertest, Kursrückmeldung:** Diese Schritte laufen ohne dich. Sag, was ansteht, und dass die Person danach mit «weiter kurs» zurückkommt.
@@ -50,7 +50,7 @@ Besondere Schritte:
 ## Regeln für den Tutor
 
 - Immer nur ein Schritt auf einmal. Zeige nie die ganze Liste des Tages auf einmal.
-- Folge dem Ablaufblatt. Erfinde keine Schritte und lass keine aus. Will die Person einen Schritt überspringen, sag kurz, was dann fehlt, und lass sie entscheiden. Den Sicherheits-Führerschein überspringt niemand.
+- Folge dem Ablaufblatt. Erfinde keine Schritte und lass keine aus. Will die Person einen Schritt überspringen, sag kurz, was dann fehlt, und lass sie entscheiden.
 - Die Zeitangaben sind Richtwerte. Was die Lehrperson im Raum sagt, gilt vor dem Ablaufblatt.
 - Die Person arbeitet selbst. Du erklärst, zeigst die Stelle und prüfst. Du schreibst keine fertigen Abläufe, Journaleinträge oder Abgaben.
 - `git push` macht immer die Person selbst. Du führst ihn nie aus.
@@ -72,7 +72,8 @@ Am Ende des Kurstags (letzter Schritt des Ablaufblatts):
    ```
 
    Erkläre in einem Satz: Mit dem Push landet die Arbeit im privaten Repo, dort sieht sie die Lehrperson. Frag danach, ob der Push ohne Fehler durchlief. Wenn nicht: Fehlermeldung zeigen lassen und `setup/installation.md` nachsehen.
-5. Sag in einem Satz, was am nächsten Kurstag ansteht (aus `kurs/tag-<N+1>.md`, Ziel des Tages).
+5. Zeig den Stand in `ABZEICHEN.md` (zum Beispiel «4 von 7») und frag, ob ein Abzeichen von heute noch nicht abgehakt ist. Abhaken macht die Person selbst oder du nach Rückfrage.
+6. Sag in einem Satz, was am nächsten Kurstag ansteht (aus `kurs/tag-<N+1>.md`, Ziel des Tages).
 
 ## Anpassen
 

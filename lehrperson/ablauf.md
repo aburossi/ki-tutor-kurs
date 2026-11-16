@@ -15,10 +15,9 @@ Die Ablaufblätter der Lernenden liegen in `kurs/` (`tag-1.md`, `tag-2.md`, `tag
 
 **Vor Kurstag 2:**
 
-- Die fünf Befehle zum Auffrischen (`setup/hilfe.md`, Abschnitt 6) an die Wand. Die Lernenden tippen sie vor «starte kurs». Gilt auch vor Kurstag 3.
+- Nur wenn Sie seit dem letzten Kurstag etwas an der Vorlage geändert haben: die fünf Befehle zum Auffrischen (`setup/hilfe.md`, Abschnitt 6) an die Wand. Sonst entfällt der Schritt. Gilt auch vor Kurstag 3.
 
 - Erinnerung: Unterlagen als Datei mitbringen, der Ordner `mein-stoff/` ist nicht im Git.
-- Kurze Rückmeldung an die Gruppe, wie viele den Sicherheits-Führerschein an Tag 1 geschafft haben und wer ihn nachholt. Nachholen kostet 10 Minuten und geht vor allem anderen.
 
 **Vor Kurstag 3:**
 
@@ -26,18 +25,20 @@ Die Ablaufblätter der Lernenden liegen in `kurs/` (`tag-1.md`, `tag-2.md`, `tag
 - Entscheid, wie die Kurzvorstellung getaktet wird. Zwei Minuten pro Person sind bei 14 Personen 28 Minuten. Wenn alle vortragen, kürzen Sie den Partnertest, nicht die Vorstellung.
 - Die eigenen Regeln der Schule zur KI-Nutzung, falls es sie schriftlich gibt. Für Ethik-Ecke 3 brauchen Sie nichts vorzulesen, aber Sie sollten wissen, was im eigenen Haus gilt.
 
+**Abzeichen:** Den Stand sehen Sie nach dem Push in jedem Repo in `ABZEICHEN.md`. Er dient der Orientierung, nicht der Bewertung.
+
 **Immer bereit:** `python tools/check.py` einmal laufen lassen, bevor die Lernenden kommen. Es prüft die Dateien des Repos, nicht die Rechner.
 
 ## Tag 1: Nutzen und Öffnen
 
-Ziel: Repo läuft, Führerschein vorgezeigt, `prompting-tutor` einmal am eigenen Stoff benutzt.
+Ziel: Repo läuft, Sicherheits-Stationen ausprobiert, `prompting-tutor` einmal am eigenen Stoff benutzt.
 
 | Zeit | Phase | Was die Lehrperson tut | Was die Lernenden tun | Material |
 | --- | --- | --- | --- | --- |
 | 0–5 | Ankommen | Begrüssen, Ziel des Tages an die Wand schreiben, keine Erklärungen zum Setup | Hinsetzen, Terminal öffnen, Ziel lesen | Beamer oder Wandtafel, `kurs/tag-1.md` |
 | 5–15 | Repo holen | Herumgehen, nur bei Klon-Fehlern helfen, Adresse an die Wand | Aufgabe annehmen, privates Repo klonen, Remote `vorlage` eintragen, «starte kurs» | `ANLEITUNG.md`, WLAN |
 | 15–25 | Setup prüfen | Sammelstelle für Fehlermeldungen, häufige Fälle aus `setup/installation.md` bereithalten | `pruefen.ps1` bzw. `pruefen.sh` ausführen | `setup/installation.md` |
-| 25–40 | Sicherheits-Führerschein | Vier Aufgaben an einem Rechner vormachen, dann einzeln abnehmen und abhaken | Die vier Aufgaben am eigenen Rechner zeigen | `kurs/sicherheits-fuehrerschein.md`, Abhakliste |
+| 25–40 | Sicherheits-Führerschein | Herumgehen, nichts abnehmen. Wer mag: Station 3 (Sabotage und Rettung) einmal am Beamer zeigen | Vier Stationen mit dem Agenten, Fragen am Schluss, Abzeichen abhaken | `kurs/sicherheits-fuehrerschein.md` |
 | 40–45 | Überblick | «zeige abläufe» einmal im Plenum zeigen | Selbst ausführen, Namen der Abläufe notieren | Beamer |
 | 45–65 | Üben mit `prompting-tutor` | Nicht eingreifen, nur beobachten; zwei oder drei Sitzungen mithören | «starte prompting-tutor» am eigenen Thema | Eigene Unterlagen |
 | 65–70 | Ablauf lesen | Hinweis: zwei Stellen notieren, die man ändern würde | `skills/prompting-tutor/SKILL.md` lesen | Repo |
@@ -76,11 +77,24 @@ Ziel: Ablauf funktioniert auf einem zweiten Fach oder ist getestet, zwei Minuten
 | 75–85 | Ethik-Ecke 3 | Keine Schulregeln behaupten, auf die eigene Lehrperson verweisen; Option C als vernünftige Wahl benennen | Diskutieren, abstimmen | `kurs/ethik-ecke-3.md` |
 | 85–90 | Kursrückmeldung | Bogen austeilen, einsammeln, letzten Commit ansagen | Bogen ausfüllen, `git commit -m "Abschluss"` | Rückmeldebogen |
 
+## Wenn etwas nicht klappt: weiterarbeiten
+
+Der Kurs hängt an keinem einzelnen technischen Schritt. Lieber improvisieren als warten.
+
+| Was hakt | Weiterarbeiten so |
+| --- | --- |
+| Einladung oder Classroom 50 klappt nicht | Öffentliche Vorlage klonen: `git clone https://github.com/aburossi/ki-tutor-kurs.git`. Damit läuft alles ausser dem Push. Das private Repo später nachholen und die eigenen Dateien hinüberkopieren. |
+| Klonen des privaten Repos scheitert (Mac, Anmeldung) | Wie oben: öffentliche Vorlage klonen, weiterarbeiten. Anmeldung in einer ruhigen Minute mit `setup/hilfe.md`, Abschnitt 1. |
+| `git push` scheitert | Lokal committen genügt fürs Weiterarbeiten. Push am nächsten Kurstag oder zu Hause nachholen. Notfalls den Ordner (ohne `mein-stoff/`) als Zip abgeben. |
+| Kein Agent auf dem Gerät | Zu zweit an einem Gerät arbeiten. |
+| «starte kurs» reagiert nicht wie erwartet | Das Ablaufblatt `kurs/tag-N.md` direkt lesen und von Hand durchgehen; es ist für Menschen geschrieben. |
+| Sicherheits-Führerschein dauert zu lang | Abbrechen und mit `prompting-tutor` weiter. Station 2 und 3 reichen, der Rest geht später. |
+
 ## Typische Stolpersteine
 
 - **Klonen scheitert am Netzzugang.** Schulnetze blockieren manchmal Git über SSH. Nehmen Sie die HTTPS-Adresse und sagen Sie das vorher.
 - **Agent startet im falschen Ordner.** Der Agent liest `AGENTS.md` nur, wenn er aus dem Kursordner gestartet wurde. Symptom: «zeige abläufe» liefert nichts. Antwort: `cd` in den Kursordner, neu starten.
-- **Nachfrage-Modus bleibt an.** Wer den Führerschein hat, aber im Nachfrage-Modus weiterarbeitet, verliert die halbe Zeit an Klicks. Prüfen Sie das beim Rundgang.
+- **Nachfrage-Modus bleibt an.** Wer sich sicher fühlt, aber im Nachfrage-Modus weiterarbeitet, verliert Zeit an Klicks. Beim Rundgang sagen, dass Umstellen erlaubt ist.
 - **`git reset --hard` ohne Commit.** Der häufigste echte Datenverlust im Kurs. Vor der Übung in Aufgabe 4 nochmals laut sagen: alles seit diesem Stand ist weg.
 - **Unterlagen im Git.** `mein-stoff/` ist nur über `.gitignore` geschützt. Wer die Datei löscht oder `git add -f` benutzt, hat fremde Skripte in seinem Repo auf GitHub. Beim Commit kurz `git status` mitlesen.
 - **Zu viel Bauen, zu wenig Lernen.** An Tag 2 kippt die Gruppe gern ins Basteln. Die 20 Minuten Lernen sind der Kern des Tages, nicht die Anpassung.
@@ -99,8 +113,8 @@ Nach jedem Kurstag ausfüllen, direkt danach, solange die Erinnerung frisch ist.
 | Setup in 10 Minuten fertig (Anzahl) |  |  |
 | Setup erst nach Hilfe fertig (Anzahl) |  |  |
 | Ohne lauffähigen Agenten (Anzahl) |  |  |
-| Führerschein an diesem Tag bestanden (Anzahl) |  |  |
-| Führerschein nachgeholt (Anzahl) |  |  |
+| Sicherheits-Stationen durchgespielt (Anzahl) |  |  |
+| Abzeichen am Ende von Tag 1 (Median) |  |  |
 | Phase, die zu lang war |  |  |
 | Phase, die zu kurz war |  |  |
 | Zeit für die Übungssitzung, effektiv (Minuten) |  |  |

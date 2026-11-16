@@ -7,12 +7,11 @@
 ## Vorher bereit
 
 - Dein Repo von Tag 1, geöffnet im Agenten.
-- Der Sicherheits-Führerschein ist vorgezeigt, du darfst im Vollzugriff arbeiten.
 - Ein Thema, das du lernen musst, und die dazugehörigen Unterlagen als Datei (PDF, Text, Foto des Skripts).
 - Deine Notiz aus Tag 1: welcher Ablauf, welches Fach, was du ändern willst.
-- **Bevor du den Agenten startest:** Kursdateien auffrischen, damit du die verbesserte Fassung hast. Die fünf Befehle stehen in `setup/hilfe.md`, Abschnitt 6, und die Lehrperson zeigt sie an der Wand. Tippe sie im Terminal im Kursordner.
+- **Nur wenn die Lehrperson es sagt:** Kursdateien auffrischen, bevor du den Agenten startest (`setup/hilfe.md`, Abschnitt 6).
 - Erste Nachricht an den Agenten: **«starte kurs»**, dann Tag 2 wählen.
-- An Tag 1 gefehlt? Sag es dem Agenten gleich nach «starte kurs». Erst Repo, Prüfskript und Führerschein, dann Tag 2 (`setup/hilfe.md`, Abschnitt 5).
+- An Tag 1 gefehlt? Sag es dem Agenten gleich nach «starte kurs». Erst Repo und Prüfskript, dann Tag 2; den Führerschein holst du nach, wenn Zeit bleibt (`setup/hilfe.md`, Abschnitt 5).
 
 ## Schritte
 
@@ -30,6 +29,8 @@
 - [ ] **85–90 Min: Journal.** Eintrag nach `lernjournal/_vorlage.md`: was du gebaut hast, was beim Lernen geholfen hat, was nicht. Danach sichern und hochladen: `git add -A`, `git commit -m "Kurstag 2"`, `git push`.
 
 ## Am Ende des Tages liegt vor
+
+- Die Abzeichen von heute sind in `ABZEICHEN.md` abgehakt.
 
 - Ein eigener Ablauf unter `skills/<dein-name>/SKILL.md`, mit `name:`, `description:` und allen Abschnitten der Vorlage.
 - Mindestens eine vollständig durchgespielte Lern-Sitzung mit diesem Ablauf.

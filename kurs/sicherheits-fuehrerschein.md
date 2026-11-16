@@ -1,93 +1,85 @@
-# Sicherheits-Führerschein
+# Sicherheits-Führerschein: vier Stationen
 
-15 Minuten, am Kurstag 1. Wer die vier Aufgaben am eigenen Rechner vorzeigt, hat den Führerschein und darf im Vollzugriff arbeiten, also ohne Nachfrage vor jeder Änderung.
+Etwa 15 Minuten am Kurstag 1. Eine Übung, keine Prüfung: Du probierst die vier
+Sicherheits-Handgriffe einmal selbst aus, auch das Kaputtmachen. Der Agent erklärt
+jede Station, du tippst. Am Schluss stellt er dir ein paar Fragen. Ob alles sitzt,
+spielt für den weiteren Kurs keine Rolle, du kannst jede Station später wiederholen.
 
-Der Führerschein hat vier Regeln. Jede Regel hat einen Grund und einen Handgriff. Die Handgriffe sind kurz, du brauchst sie ab jetzt vor jeder Sitzung.
+Der Agent führt dich mit «starte kurs» hierher. Ohne Kursbegleiter schreibst du:
+«Lies kurs/sicherheits-fuehrerschein.md und führe mich durch die Stationen.»
 
-## Regel 1: Der Agent arbeitet nur im Kursordner
+## Station 1: Wo bin ich?
 
-**Warum:** Der Agent darf lesen und schreiben, was du ihm erlaubst. Wenn er im ganzen Benutzerordner unterwegs ist, kann er versehentlich Dateien ändern, die nichts mit dem Kurs zu tun haben: Fotos, Steuererklärung, Bewerbungen. Ein falscher Befehl im falschen Ordner ist schnell getippt.
+**Warum:** Der Agent darf lesen und schreiben, was du ihm erlaubst. Startest du ihn
+im Benutzerordner, kommt er an deine Fotos, Bewerbungen, Steuererklärung.
 
-**Handgriff:** Vor der Arbeit prüfen, wo du bist.
+**Mission:** Tippe `pwd`. Der Pfad muss auf deinen Kursordner enden
+(`ff26c-ki-tutor-<dein-github-name>`). Nenne eine Datei, die es nur hier gibt.
+Starte den Agenten immer aus diesem Ordner.
 
-```
-pwd
-```
+## Station 2: Speicherpunkt setzen
 
-Windows-Eingabeaufforderung: `cd`. Es muss ein Pfad sein, der auf deinen Kursordner endet (`ff26c-ki-tutor-<dein-github-name>`). Wenn nicht, mit `cd` in den Kursordner wechseln, bevor du den Agenten startest. Starte den Agenten immer aus diesem Ordner heraus, nie aus dem Benutzerordner.
+**Warum:** Ein Agent kann in einem Durchgang zwanzig Dateien ändern. Git ist dein
+Speicherpunkt wie in einem Spiel: Geht etwas schief, lädst du ihn neu.
 
-**Zusatz:** Werkzeuge haben einen Nachfrage-Modus, in dem der Agent vor jeder Änderung fragt. Das ist Regel 4 und gehört dazu.
-
-## Regel 2: Stand sichern und zurückspringen
-
-**Warum:** Ein Agent kann in einem Durchgang zwanzig Dateien ändern. Manchmal ist das gut, manchmal ist es Unsinn. Ohne gesicherten Stand gibt es keinen Weg zurück, und du merkst den Unsinn erst, wenn dein Ablauf nicht mehr startet. Git ist dein Rückweg.
-
-**Handgriffe, in dieser Reihenfolge:**
-
-Vor jeder Sitzung den Stand sichern:
+**Mission:** Lege im Kursordner `test.txt` mit einem Satz an (nicht in `mein-stoff/`,
+den Ordner sieht Git absichtlich nicht). Dann:
 
 ```
 git add -A
-git commit -m "Stand vor der Sitzung"
-```
-
-Nachschauen, welche Stände es gibt:
-
-```
+git commit -m "Speicherpunkt"
 git log --oneline
 ```
 
-Eine einzelne Datei zurückholen, die kaputt ist:
+Die Zahl-Buchstaben-Folge vorne ist dein Speicherpunkt (der Hash).
+
+## Station 3: Sabotage und Rettung
+
+**Warum:** Du sollst einmal erlebt haben, dass kaputt nicht schlimm ist, wenn du
+gesichert hast.
+
+**Mission:** Bitte den Agenten, `kurs/tag-1.md` halb zu löschen. Schau mit
+`git status`, was Git bemerkt. Rette die Datei mit:
 
 ```
 git restore kurs/tag-1.md
 ```
 
-Alles seit einem Stand verwerfen, wenn der ganze Ordner wirr ist:
+Kontrolle: Die Datei ist wieder ganz.
 
-```
-git reset --hard <commit>
-```
+**Bonus, wer mag:** Ändere zwei Dateien und spring mit `git reset --hard <hash>`
+auf den Speicherpunkt aus Station 2 zurück. Achtung: Das löscht **alle** Änderungen
+seit diesem Speicherpunkt, ohne Nachfrage. `restore` rettet eine Datei,
+`reset --hard` setzt den ganzen Ordner zurück.
 
-**Warnung:** `git reset --hard` löscht alle Änderungen seit diesem Commit, ohne Nachfrage. Was nicht committet ist, ist danach weg. Nimm den Commit-Hash aus `git log --oneline`, nie einen geratenen. Im Zweifel zuerst `git add -A` und committen, dann zurückspringen — so ist der wirre Stand wenigstens gesichert.
+## Station 4: Was nicht in den Chat gehört
 
-## Regel 3: Nichts Geheimes und keine Daten Dritter
+**Warum:** Was du in den Chat tippst oder in den Ordner legst, kann deinen Rechner
+verlassen.
 
-**Warum:** Was im Ordner liegt, kann der Agent lesen und in seine Antwort einbauen. Was du in den Chat tippst, verlässt deinen Rechner. Passwörter, API-Schlüssel, Ausweisdaten und Angaben über andere Personen gehören deshalb weder in den Ordner noch in den Chat.
+**Mission:** Sortiere mit dem Agenten fünf Dinge in «darf rein» und «bleibt draussen»:
+eigene Notizen, ein Passwort, das Skript der Lehrperson, die Note einer Kollegin,
+deine eigene Zusammenfassung.
 
-**Handgriffe:**
+Auflösung: Passwörter und Daten anderer Personen bleiben draussen. Skripte der
+Lehrperson nur nach `mein-stoff/`, dieser Ordner geht nie auf GitHub. `git status`
+zeigt dir, was Git sieht.
 
-- Keine Datei mit Passwörtern, Schlüsseln oder Kundendaten in den Ordner legen. Auch nicht «nur kurz».
-- Unterlagen von Lehrpersonen nur nach `mein-stoff/`. Dieser Ordner ist absichtlich nicht im Git, weil fremde Skripte urheberrechtlich geschützt sind.
-- Im Lernjournal keine Namen anderer Personen, keine Noten, nichts Privates. Das Journal ist versioniert und landet mit `git push` in deinem Repo, dort liest es die Lehrperson.
-- Wenn du eine Datei mit verdächtigem Inhalt findest: nicht öffnen lassen, nicht committen, der Lehrperson sagen.
+## Nachfrage oder Vollzugriff
 
-**Handgriff zum Prüfen:** `git status` zeigt, was Git sieht. Steht dort eine Datei, die nicht in den Kurs gehört, nicht committen, sondern löschen oder verschieben.
+Der Agent kann vor jeder Änderung fragen (Nachfrage) oder direkt arbeiten
+(Vollzugriff). Zum Start empfehlen wir Nachfrage, dann siehst du, was er tut. Sobald
+du dich sicher fühlst und Speicherpunkte setzt, darfst du umstellen. Wie das geht,
+steht in `setup/hilfe.md`, Abschnitt 4.
 
-## Regel 4: Nachfrage-Modus zuerst
+## Fragen am Schluss
 
-**Warum:** Am Anfang weisst du noch nicht, was der Agent kann und was er falsch versteht. Im Nachfrage-Modus zeigt er jede Änderung, bevor er sie macht. Du siehst also, was passiert, und lernst dabei, wie er arbeitet. Vollzugriff ist schneller, aber erst sinnvoll, wenn du die Änderungen beurteilen kannst.
+Der Agent stellt dir drei oder vier davon, eine nach der anderen:
 
-**Handgriff:** Beim Start des Werkzeugs den Modus wählen, der vor Änderungen fragt. Bei OpenCode, Claude Code und Codex heisst das je nach Version anders (zum Beispiel «Ask» oder «Nachfrage»); nimm die Einstellung, bei der vor dem Schreiben einer Datei eine Rückfrage kommt. Probiere es aus: Lass den Agenten eine Testdatei anlegen. Kommt keine Rückfrage, ist der Modus falsch eingestellt.
+1. Woran erkennst du, dass du im richtigen Ordner bist?
+2. Was ist ein Speicherpunkt in Git, und mit welchen Befehlen setzt du ihn?
+3. Was ist der Unterschied zwischen `git restore` und `git reset --hard`?
+4. Warum geht `mein-stoff/` nie auf GitHub?
+5. Was tippst du nie in den Chat?
 
-Ab dem Sicherheits-Führerschein darfst du auf Vollzugriff wechseln. Regel 2 bleibt trotzdem Pflicht, weil Vollzugriff bedeutet: Änderungen passieren ohne Rückfrage.
-
-## Praktische Prüfung
-
-Vier Aufgaben, am eigenen Rechner, vor der Lehrperson oder vor einer anderen Person aus dem Kurs. Reihenfolge einhalten, die Aufgaben bauen aufeinander auf. Wer alle vier zeigt, hat den Führerschein.
-
-**Aufgabe 1: Zeigen, dass du im richtigen Ordner bist.**
-Führe `pwd` aus und erkläre in einem Satz, woran man sieht, dass es der Kursordner ist. Nenne eine Datei, die es nur im Kursordner gibt.
-
-**Aufgabe 2: Einen Stand sichern.**
-Lege im Kursordner eine neue Datei `test.txt` an, mit einem Satz Inhalt. (Nicht in `mein-stoff/`: Diesen Ordner sieht Git absichtlich nicht, der Commit bliebe leer.) Dann `git add -A` und `git commit -m "Test"`. Zeige mit `git log --oneline`, dass der Stand da ist, und nenne den Commit-Hash.
-
-**Aufgabe 3: Eine Datei kaputt machen lassen und einzeln zurückholen.**
-Lass den Agenten eine bestehende Datei verändern, bis sie nicht mehr stimmt, zum Beispiel `kurs/tag-1.md` halb löschen. Dann `git status` zeigen, dann `git restore kurs/tag-1.md`. Zeige, dass die Datei wieder wie vorher ist.
-
-**Aufgabe 4: Zurückspringen mit Warnung.**
-Ändere zwei Dateien. Dann spring mit `git reset --hard <commit>` auf den Stand aus Aufgabe 2 zurück. Erkläre vorher laut, was dabei verloren geht, nämlich alle Änderungen seit diesem Commit. Zeige danach `git log --oneline` und `git status`.
-
-**Bestanden, wenn:** Du alle vier Befehle selbst getippt hast, bei Aufgabe 4 die Warnung erklärt hast und weisst, was `git restore` von `git reset --hard` unterscheidet (eine Datei gegen den ganzen Ordner).
-
-Wer eine Aufgabe nicht zeigen kann, bekommt fünf Minuten Zeit, sie nachzuholen. Das ist kein Durchfallen, sondern der Sinn der Übung.
+Danach hakst du das Abzeichen «Führerschein» in `ABZEICHEN.md` ab.

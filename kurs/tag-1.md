@@ -2,7 +2,7 @@
 
 **Ziel des Tages:** Du hast das Kurs-Repo auf deinem Rechner zum Laufen gebracht, kennst die vier Sicherheitsregeln und hast den Ablauf `prompting-tutor` einmal mit deinem eigenen Schulstoff benutzt.
 
-**Gesamtzeit:** 90 Minuten (2 Lektionen), davon 15 Minuten Sicherheits-Führerschein und 10 Minuten Ethik-Ecke.
+**Gesamtzeit:** 90 Minuten (2 Lektionen), davon 15 Minuten Sicherheits-Führerschein (Übung) und 10 Minuten Ethik-Ecke.
 
 ## Vorher bereit
 
@@ -15,7 +15,7 @@
 - [ ] **0–5 Min: Ankommen.** Setz dich hin, öffne ein Terminal, lies das Ziel oben. Kein Setup in dieser Zeit.
 - [ ] **5–15 Min: Repo holen.** Im Kurs bekommst du ein eigenes, privates Repo (Schritt für Schritt in `ANLEITUNG.md`): Einladung in die Organisation `freifach-ki` aus dem bbw-Postfach annehmen, dann den Link der Lehrperson öffnen und die Aufgabe annehmen. Dein Repo heisst `ff26c-ki-tutor-<dein-github-name>`. Klone es mit `git clone https://github.com/freifach-ki/ff26c-ki-tutor-<dein-github-name>.git` und wechsle in den Ordner. Ohne GitHub-Konto: zuerst `git clone https://github.com/aburossi/ki-tutor-kurs.git`, das Konto holst du bis Tag 2 nach. Starte dann im Ordner deinen Agenten und schreib **«starte kurs»**: Ab hier führt dich der Agent durch die Schritte unten.
 - [ ] **15–25 Min: Setup prüfen.** Windows: `powershell -ExecutionPolicy Bypass -File setup/pruefen.ps1`. macOS und Linux: `bash setup/pruefen.sh`. Das Skript sagt dir, ob Git, dein Agent und die Ordner da sind. Fehlermeldungen nicht wegklicken, sondern in `setup/installation.md` nachschauen.
-- [ ] **25–40 Min: Sicherheits-Führerschein.** Arbeite `kurs/sicherheits-fuehrerschein.md` durch. Du zeigst die vier Aufgaben am eigenen Rechner vor. Wer sie zeigt, darf ab jetzt im Vollzugriff arbeiten, also ohne Nachfrage vor jeder Änderung.
+- [ ] **25–40 Min: Sicherheits-Führerschein.** Der Agent führt dich durch vier Stationen in `kurs/sicherheits-fuehrerschein.md`: Ordner prüfen, Speicherpunkt setzen, Sabotage und Rettung, was nicht in den Chat gehört. Am Schluss ein paar Fragen. Danach das Abzeichen «Führerschein» in `ABZEICHEN.md` abhaken.
 - [ ] **40–45 Min: Überblick holen.** Schreib in deinem Agenten «zeige abläufe». Er listet die Ordner unter `skills/`. Schau dir die Namen an und notiere, welcher dich am meisten anspricht.
 - [ ] **45–65 Min: Üben mit `prompting-tutor`.** Schreib «starte prompting-tutor». Der Agent fragt dich nach Fach, Thema und Stoff. Antworte ehrlich, auch wenn du unsicher bist. Übe mit einem echten Thema, nicht mit einem Beispiel.
 - [ ] **65–70 Min: Den Ablauf lesen.** Öffne `skills/prompting-tutor/SKILL.md` und lies ihn ganz. Notiere zwei Stellen, die du für dein Fach anders machen würdest.
@@ -25,8 +25,10 @@
 
 ## Am Ende des Tages liegt vor
 
+- Die Abzeichen von heute sind in `ABZEICHEN.md` abgehakt.
+
 - Eine laufende Kopie des Repos auf deinem Rechner, `setup/pruefen.*` ist ohne roten Fehler durchgelaufen.
-- Der Sicherheits-Führerschein ist vorgezeigt, du arbeitest im Vollzugriff.
+- Die vier Stationen des Sicherheits-Führerscheins sind ausprobiert.
 - Eine geübte Sitzung mit `prompting-tutor` zu einem eigenen Thema.
 - Ein Eintrag im Lernjournal, hochgeladen mit `git push`.
 

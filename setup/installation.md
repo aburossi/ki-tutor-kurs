@@ -54,8 +54,8 @@ Folge der Anleitung auf der Seite. Danach öffnest du dein Terminal im Ordner
 Im Nachfrage-Modus fragt der Agent vor jeder Änderung an einer Datei nach, und du
 siehst den Befehl, den er ausführen will. So passiert nichts, was du nicht wolltest.
 
-Im Kurs starten wir alle so. Erst nach dem Sicherheits-Führerschein
-(`kurs/sicherheits-fuehrerschein.md`) darfst du den Vollzugriff einschalten.
+Im Kurs starten wir alle so. Sobald du dich sicher fühlst, darfst du den Vollzugriff
+einschalten. Der Sicherheits-Führerschein (`kurs/sicherheits-fuehrerschein.md`) hilft dabei.
 
 Wie du den Modus wählst, hängt vom Werkzeug ab und ändert sich manchmal. Schau in
 der Anleitung deines Werkzeugs nach «Approval», «Permissions» oder «Nachfrage» und

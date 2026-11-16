@@ -9,7 +9,7 @@
 - Dein Ablauf von Tag 2, lauffähig, im Repo committet.
 - Ein zweites Fach oder Thema, auf das du übertragen könntest.
 - Wenn du übertragen willst: Unterlagen zum zweiten Thema in `mein-stoff/`, in einem anderen Unterordner.
-- **Bevor du den Agenten startest:** Kursdateien auffrischen, damit du die verbesserte Fassung hast. Die fünf Befehle stehen in `setup/hilfe.md`, Abschnitt 6, und die Lehrperson zeigt sie an der Wand. Tippe sie im Terminal im Kursordner.
+- **Nur wenn die Lehrperson es sagt:** Kursdateien auffrischen, bevor du den Agenten startest (`setup/hilfe.md`, Abschnitt 6).
 - Erste Nachricht an den Agenten: **«starte kurs»**, dann Tag 3 wählen.
 
 ## Schritte
@@ -24,6 +24,8 @@
 - [ ] **85–90 Min: Kursrückmeldung.** Die Fragen der Kursleitung, ehrlich ausgefüllt. Danach letzter Commit und Abgabe: `git add -A`, `git commit -m "Abschluss"`, `git push`. Was bis 11:55 Uhr hochgeladen ist, gilt als abgegeben.
 
 ## Am Ende des Tages liegt vor
+
+- Die Abzeichen von heute sind in `ABZEICHEN.md` abgehakt.
 
 - Ein Ablauf, der auf mindestens einem Fach funktioniert und von mindestens einer anderen Person getestet wurde.
 - Mindestens zwei Einträge im Lernjournal.

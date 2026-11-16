@@ -127,6 +127,7 @@ tools/check.py           Prüfbefehl für dieses Repo
 
 ## Weiterlesen
 
-- `kurs/sicherheits-fuehrerschein.md` — bevor du dem Agenten Vollzugriff gibst.
+- `kurs/sicherheits-fuehrerschein.md` — vier Stationen zu den Sicherheits-Handgriffen, am Kurstag 1.
+- `ABZEICHEN.md` — deine Abzeichen im Kurs, selbst abhaken.
   Kurz: erst im Nachfrage-Modus arbeiten, dann Freigabe.
 - `kurs/tag-1.md` — was am ersten Kurstag passiert.

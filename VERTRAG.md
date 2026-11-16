@@ -92,7 +92,7 @@ in dieser Reihenfolge, als `##`-Überschriften:
 - Der Agent arbeitet nur im Kursordner. Vor jeder Sitzung Stand sichern
   (`git add -A` und `git commit`), zurückspringen mit `git restore` bzw. `git reset`.
 - Start im Nachfrage-Modus des Werkzeugs (Agent fragt vor jeder Änderung),
-  Vollzugriff erst nach dem Sicherheits-Führerschein.
+  Nachfrage-Modus zum Start empfohlen; der Sicherheits-Führerschein ist eine Übung, kein Tor.
 - Keine Passwörter, API-Schlüssel oder Daten Dritter im Ordner.
 
 ## Was kein Paket tut

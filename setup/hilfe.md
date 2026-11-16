@@ -64,12 +64,12 @@ Lies die Meldung. Die wichtigen Wörter stehen meist in den letzten Zeilen.
 Zwei Ebenen, nicht verwechseln:
 
 - **Das Werkzeug** fragt (oder nicht), bevor es eine Datei schreibt oder einen Befehl
-  ausführt. Das ist der **Modus**. Bis zum Sicherheits-Führerschein: Nachfrage.
-  Danach darfst du Vollzugriff einstellen.
+  ausführt. Das ist der **Modus**. Zum Start empfohlen: Nachfrage.
+  Sobald du dich sicher fühlst und Speicherpunkte setzt, darfst du umstellen.
 - **Der Tutor** zeigt dir im Chat immer zuerst, was er ändern will, und fragt
   (Regel 2 in `AGENTS.md`). Das bleibt auch im Vollzugriff so.
 
-| Werkzeug | Nachfrage (Start) | Vollzugriff (nach dem Führerschein) |
+| Werkzeug | Nachfrage (Start) | Vollzugriff (wenn du dich sicher fühlst) |
 | --- | --- | --- |
 | OpenCode | Ist im Kursordner schon eingestellt (`opencode.json`). | Bei der Rückfrage «Always» / «Immer erlauben» wählen. |
 | Claude Code | Standard beim Start. | `Shift+Tab` drücken, bis unten «accept edits on» steht. |
@@ -89,8 +89,8 @@ den kürzesten Weg vor.
 
 Was nie wegfällt:
 
-- **Tag 1 verpasst:** `ANLEITUNG.md` (Repo holen), Prüfskript, Sicherheits-Führerschein
-  (vor der Lehrperson oder einer Person aus dem Kurs). Das zuerst, dann erst Tag 2.
+- **Tag 1 verpasst:** `ANLEITUNG.md` (Repo holen), Prüfskript. Das zuerst, dann Tag 2.
+  Den Sicherheits-Führerschein holst du nach, wenn Zeit bleibt.
 - **Tag 2 verpasst:** Einen Ablauf anpassen und einmal damit lernen. Das ist der Kern
   des Abschlussprojekts.
 - **Jeder Tag:** Lernjournal und `git push` am Schluss.
