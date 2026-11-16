@@ -18,8 +18,11 @@ Im Freifachkurs bekommst du ein eigenes, **privates** Repo. Nur du und die
 Lehrperson sehen es. Dorthin lädst du deine Arbeit hoch (push), und die Lehrperson
 sammelt sie am Schluss ein.
 
-1. Gib der Lehrperson deinen GitHub-Namen. Du bekommst eine Einladung in die
-   Organisation `freifach-ki` (per Mail oder auf github.com). Nimm sie an.
+Die ausführliche Schritt-für-Schritt-Anleitung steht in [`ANLEITUNG.md`](ANLEITUNG.md).
+Kurz:
+
+1. Du bekommst eine Einladung in die Organisation `freifach-ki` an deine
+   bbw-Adresse. Nimm sie an (ohne GitHub-Konto legst du dabei eines an).
    Die Einladung gilt 7 Tage.
 2. Öffne den Link der Lehrperson
    (`https://classroom50.org/freifach-ki/ff26c/assignments/ki-tutor/accept`)
@@ -110,6 +113,7 @@ Am Ende des Tages sicherst du deine Arbeit und lädst sie hoch (`git push`).
 
 ```
 README.md                diese Datei: holen und starten
+ANLEITUNG.md             Schritt für Schritt vom Einladungsmail bis «starte kurs»
 AGENTS.md                Grundregeln des Tutors, Liste der Lernabläufe
 CLAUDE.md                Verweis auf AGENTS.md für Claude Code
 setup/                   Prüfskripte und Installationshilfe
