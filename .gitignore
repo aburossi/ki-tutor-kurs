@@ -11,3 +11,7 @@ mein-stoff/*
 .DS_Store
 Thumbs.db
 __pycache__/
+
+# Werkstatt des Agenten (Zwischendateien, umgewandelte Unterlagen)
+werkstatt/*
+!werkstatt/README.md

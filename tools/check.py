@@ -9,7 +9,7 @@ PAKETE = {
     "repo": [
         "README.md", "ANLEITUNG.md", "ABZEICHEN.md", "AGENTS.md", "CLAUDE.md", "setup/pruefen.ps1", "setup/pruefen.sh",
         "setup/installation.md", "setup/hilfe.md", "opencode.json", ".claude/settings.json", "lernjournal/README.md", "lernjournal/_vorlage.md",
-        "mein-stoff/README.md", ".opencode/command/einstieg.md", ".claude/commands/einstieg.md", ".opencode/command/journal.md", ".claude/commands/journal.md",
+        "mein-stoff/README.md", "werkstatt/README.md", ".opencode/command/einstieg.md", ".claude/commands/einstieg.md", ".opencode/command/journal.md", ".claude/commands/journal.md",
     ],
     "skills": [
         "skills/README.md", "skills/_vorlage/SKILL.md",

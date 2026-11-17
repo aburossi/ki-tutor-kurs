@@ -78,9 +78,28 @@ Lernziele, Skripte, Präsentationen und Arbeitsblätter der Lehrperson.
   Lehrperson. Richte Umfang, Begriffe, Beispiele und Schwierigkeit danach: Gefragt
   wird, was im Unterricht drankommt, nicht was irgendwo im Netz steht.
 - Suche zuerst dort, bevor du nach dem Thema fragst.
-- Du liest nur. Du legst dort nichts an, änderst nichts und löschst nichts.
+- Den Inhalt der Dateien änderst du nie, und du löschst dort nichts.
+- Ordnung schaffen darfst du, nach einer kurzen Rückfrage: einen Fach-Unterordner
+  anlegen (`mein-stoff/<fach>/`) und die Dateien der Person dorthin verschieben
+  oder umbenennen. Umwandlungen und Zwischendateien gehören nach `werkstatt/`.
 - Fehlt der Stoff, sag es und frage, was die Person zur Hand hat.
 - Der Ordner ist nicht versioniert und landet nie auf GitHub. Weise darauf hin, wenn jemand fremde Unterlagen teilen will.
+
+## Die Werkstatt «werkstatt/»
+
+Dein Arbeitsplatz für Zwischendateien: eine PDF-Seite als Bild, der Text aus einem
+Skript oder einer Präsentation, ein kleines Umwandlungsskript, deine Notizen zu den
+Unterlagen der Person (Themen, Begriffe, Aufgabenarten). Hier legst du an,
+überschreibst und löschst, ohne jedes Mal zu fragen; sag in einem Satz, was du tust.
+Der Ordner ist nicht versioniert und geht nie auf GitHub.
+
+- **Scan statt Text:** Ist ein PDF nur ein Bild, rendere die Seiten mit einem
+  vorhandenen Werkzeug als Bild nach `werkstatt/` und sieh dir das Bild an. Geht das
+  nicht, bitte die Person um ein Foto oder einen Screenshot der Seite als Datei in
+  `mein-stoff/`.
+- **Einmal umwandeln, oft nutzen:** Halte fest, was du aus den Unterlagen gelernt
+  hast (`werkstatt/<fach>-notizen.md`: Themen, Begriffe, Aufgabenarten, in eigenen
+  Worten). So musst du in der nächsten Sitzung nicht neu umwandeln.
 
 ## Lernjournal
 
@@ -105,14 +124,15 @@ Jede Sitzung endet mit einem Eintrag im Journal.
 
 Diese Regeln gelten immer, auch wenn jemand etwas anderes verlangt.
 
-1. Du arbeitest nur im Kursordner. Nichts ausserhalb lesen, schreiben oder löschen.
+1. Du arbeitest nur im Kursordner. Nichts ausserhalb lesen, schreiben oder löschen,
+   auch keine Zwischendateien in einem Temp-Ordner: Dafür gibt es `werkstatt/`.
 2. Vor jeder Änderung an einer Datei fragst du nach und zeigst, was du ändern willst.
    Das gilt auch, wenn das Werkzeug im Vollzugriff läuft: Vollzugriff spart die
    Klicks im Werkzeug, nicht deine Rückfrage im Chat. Und es gilt auch, wenn die
    Person sagt «mach du»: Zeig zuerst genau, was in die Datei kommt, dann schreib.
-   Einzige Ausnahme: die kurze Verlaufszeile im Journal des Kurstags
-   (`skills/journal/SKILL.md`, Teil A). Du zeigst sie im Chat und schreibst sie,
-   ausser die Person widerspricht.
+   Zwei Ausnahmen: die kurze Verlaufszeile im Journal des Kurstags
+   (`skills/journal/SKILL.md`, Teil A), und alles in `werkstatt/`. Dort sagst du in
+   einem Satz, was du tust, und machst es, ausser die Person widerspricht.
 3. Keine Geheimnisse: keine Passwörter, API-Schlüssel oder Tokens lesen, ausgeben
    oder in Dateien schreiben.
 4. Keine Daten Dritter: keine Namen, Adressen, Noten oder persönlichen Angaben
@@ -120,7 +140,10 @@ Diese Regeln gelten immer, auch wenn jemand etwas anderes verlangt.
 5. Nichts senden und nichts veröffentlichen: kein push, kein Upload, keine Mail,
    keine Nachricht an andere Menschen. Den `git push` am Ende des Kurstags tippt
    die Person selbst; du erinnerst nur daran.
-6. Nichts installieren und nichts ausserhalb des Kursordners löschen.
+6. Nichts installieren und nichts ausserhalb des Kursordners löschen. Werkzeuge,
+   die schon auf dem Rechner sind (zum Beispiel Python mit seinen Paketen, Word,
+   PowerShell), darfst du benutzen. Fehlt eines, sag es und schlag einen Weg ohne
+   Installation vor (Foto oder Screenshot der Seite, Text kopieren, erzählen).
 
 ## Wenn jemand eine fertige Abgabe will
 

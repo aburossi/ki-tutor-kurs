@@ -16,7 +16,7 @@
 
 - [ ] **Schritt 1 · 9:15–9:20: Ankommen.** Setz dich hin, öffne ein Terminal, lies das Ziel oben. Kein Setup in dieser Zeit.
 - [ ] **Schritt 2 · 9:20–9:30: Repo holen.** Im Kurs bekommst du ein eigenes, privates Repo (Schritt für Schritt in `ANLEITUNG.md`): Einladung in die Organisation `freifach-ki` aus dem bbw-Postfach annehmen, dann den Link der Lehrperson öffnen und die Aufgabe annehmen. Dein Repo heisst `ff26c-ki-tutor-<dein-github-name>`. Klone es mit `git clone https://github.com/freifach-ki/ff26c-ki-tutor-<dein-github-name>.git` und wechsle in den Ordner. **Ohne GitHub-Konto:** Leg heute kein Konto an. Klone `git clone https://github.com/aburossi/ki-tutor-kurs.git` und arbeite damit. Du sicherst heute nur mit `git commit`, hochladen holst du nach (`setup/hilfe.md`, Abschnitt 7). Starte dann im Ordner deinen Agenten und schreib **«starte kurs»** (oder `/kurs`): Ab hier führt dich der Agent durch die Schritte unten.
-- [ ] **Schritt 3 · 9:30–9:40: Setup prüfen.** Windows: `powershell -ExecutionPolicy Bypass -File setup/pruefen.ps1`. macOS und Linux: `bash setup/pruefen.sh`. Das Skript sagt dir, ob Git, dein Agent und die Ordner da sind. Fehlermeldungen nicht wegklicken, sondern in `setup/installation.md` nachschauen.
+- [ ] **Schritt 3 · 9:30–9:40: Setup prüfen.** Befehle tippst du am einfachsten direkt im Chat deines Agenten mit `!` davor, dann laufen sie im Kursordner: `!git status`. Windows: `powershell -ExecutionPolicy Bypass -File setup/pruefen.ps1`. macOS und Linux: `bash setup/pruefen.sh`. Das Skript sagt dir, ob Git, dein Agent und die Ordner da sind. Fehlermeldungen nicht wegklicken, sondern in `setup/installation.md` nachschauen.
 - [ ] **Schritt 4 · 9:40–9:55: Sicherheits-Führerschein.** Der Agent führt dich durch vier Stationen in `kurs/sicherheits-fuehrerschein.md`: Ordner prüfen, Speicherpunkt setzen, Sabotage und Rettung, was nicht in den Chat gehört. Am Schluss ein paar Fragen. Danach das Abzeichen «Führerschein» in `ABZEICHEN.md` abhaken.
 - [ ] **Schritt 5 · 9:55–10:00: Unterlagen ablegen.** Lege deine Unterlagen in `mein-stoff/<fach>/`, zum Beispiel `mein-stoff/rechnungswesen/`. Der Ordner geht nie auf GitHub. Keine Namen anderer Personen, keine Noten, keine Fotos von Mitschülerinnen und Mitschülern. Prüfe mit `git status`: Deine Dateien dürfen dort nicht auftauchen.
 - [ ] **Schritt 6 · 10:00–10:20: Pause.** Bildschirm aus, aufstehen. Danach geht es mit «weiter kurs» weiter.
@@ -39,10 +39,11 @@
 
 Anmelden, Push-Fehler, Modus des Agenten, zu spät, ohne Konto: `setup/hilfe.md`.
 
-1. **Das Setup-Skript bricht ab.** Lies die letzte Zeile der Fehlermeldung, nicht die erste. Meistens fehlt Git oder der Agent ist nicht im Suchpfad. `setup/installation.md` nennt die häufigsten Fälle. Wenn es nach 5 Minuten nicht läuft: Nachbarin oder Nachbar fragen, nicht weiterprobieren.
-2. **Der Agent findet die Abläufe nicht.** Prüfe, ob du wirklich im Kursordner bist (`pwd`). Schreib dann «zeige abläufe» noch einmal. Wenn die Liste leer bleibt, fehlt `AGENTS.md` im Ordner — dann neu klonen.
-3. **Der Tutor kann deine Unterlagen nicht lesen.** Manche PDFs sind nur Bilder, Präsentationen kann er oft nicht öffnen. Kopiere den Text der wichtigsten Seiten in eine Datei `mein-stoff/<fach>/notizen.txt`, oder erzähl dem Tutor in drei Sätzen, worum es geht.
-4. **Der Agent redet zu viel.** Schreib: «Eine Frage auf einmal, warte auf meine Antwort.» Das ist erlaubt und steht so in den Abläufen.
+1. **«Datei nicht vorhanden» beim Prüfskript.** Du bist im falschen Ordner, ein neues Terminal startet oft in `C:\Windows\system32`. Tipp den Befehl im Agenten-Chat mit `!` davor, oder wechsle zuerst mit `cd` in den Kursordner.
+2. **Das Setup-Skript bricht ab.** Lies die letzte Zeile der Fehlermeldung, nicht die erste. Meistens fehlt Git oder der Agent ist nicht im Suchpfad. `setup/installation.md` nennt die häufigsten Fälle. Wenn es nach 5 Minuten nicht läuft: Nachbarin oder Nachbar fragen, nicht weiterprobieren.
+3. **Der Agent findet die Abläufe nicht.** Prüfe, ob du wirklich im Kursordner bist (`pwd`). Schreib dann «zeige abläufe» noch einmal. Wenn die Liste leer bleibt, fehlt `AGENTS.md` im Ordner — dann neu klonen.
+4. **Der Tutor kann deine Unterlagen nicht lesen.** Manche PDFs sind nur Bilder (Scans), Präsentationen kann er oft nicht öffnen. Er versucht dann selbst, die Seite in `werkstatt/` umzuwandeln. Klappt das nicht: Foto oder Screenshot der Seite in `mein-stoff/<fach>/` legen, Bilder kann er ansehen. Oder Text kopieren, oder in drei Sätzen erzählen.
+5. **Der Agent redet zu viel.** Schreib: «Eine Frage auf einmal, warte auf meine Antwort.» Das ist erlaubt und steht so in den Abläufen.
 
 ## Schneller fertig?
 
