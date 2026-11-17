@@ -127,7 +127,6 @@ lernjournal/             dein Lernjournal, eine Datei pro Sitzung
 mein-stoff/              dein Schulstoff (bleibt lokal, nie auf GitHub)
 skills/                  die Lernabläufe, je ein Ordner mit SKILL.md
 kurs/                    Ablaufblätter der drei Kurstage
-lehrperson/              Unterlagen für die Lehrperson
 tools/check.py           Prüfbefehl für dieses Repo
 ```
 

@@ -20,7 +20,7 @@ PAKETE = {
     "kurs": [
         "kurs/tag-1.md", "kurs/tag-2.md", "kurs/tag-3.md",
         "kurs/sicherheits-fuehrerschein.md", "kurs/ethik-ecke-1.md",
-        "kurs/ethik-ecke-2.md", "kurs/ethik-ecke-3.md", "lehrperson/ablauf.md",
+        "kurs/ethik-ecke-2.md", "kurs/ethik-ecke-3.md",
     ],
 }
 

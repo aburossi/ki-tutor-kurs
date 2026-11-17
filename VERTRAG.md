@@ -57,7 +57,7 @@ kurs/sicherheits-fuehrerschein.md                                         (Paket
 kurs/ethik-ecke-1.md  (Was verlässt meinen Rechner?)                      (Paket kurs)
 kurs/ethik-ecke-2.md  (Urheberrecht und Lernen oder Abkürzen)             (Paket kurs)
 kurs/ethik-ecke-3.md  (Deklaration bei VA und Prüfungen)                  (Paket kurs)
-lehrperson/ablauf.md          Zeitplan pro Tag für die Lehrperson, Messpunkte (Paket kurs)
+(Lehrermaterial liegt ausserhalb der Vorlage, nicht im Repo)
 tools/check.py                Prüfbefehl (Basis, schon da)
 ```
 

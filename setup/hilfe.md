@@ -105,7 +105,7 @@ bekommt das nicht von selbst. Im Kursordner, im Terminal:
 git add -A
 git commit -m "Stand vor dem Auffrischen"
 git fetch https://github.com/aburossi/ki-tutor-kurs.git main
-git checkout FETCH_HEAD -- AGENTS.md CLAUDE.md ANLEITUNG.md opencode.json .claude .opencode kurs setup lehrperson tools skills/kurs skills/einstieg skills/journal
+git checkout FETCH_HEAD -- AGENTS.md CLAUDE.md ANLEITUNG.md opencode.json .claude .opencode kurs setup tools skills/kurs skills/einstieg skills/journal
 git commit -m "Kursdateien aufgefrischt"
 ```
 
