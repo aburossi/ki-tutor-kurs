@@ -27,7 +27,10 @@ Die Einladung gilt 7 Tage.
 1. Öffne diesen Link:
    **https://classroom50.org/freifach-ki/ff26c/assignments/ki-tutor/accept**
 2. Melde dich mit GitHub an, wenn danach gefragt wird, und erlaube den Zugriff.
-3. Klicke auf **Accept assignment**.
+3. Klicke auf **Accept assignment**:
+
+   ![Auftrag annehmen](anleitung/1-auftrag-annehmen.png)
+
 4. Es erscheint die Seite **My submission**. Dort steht dein Repo:
    `ff26c-ki-tutor-<dein-github-name>`. Darunter steht der Befehl
    `git clone https://github.com/...`. Kopiere ihn mit dem Knopf rechts daneben.
@@ -36,39 +39,65 @@ Dein Repo ist **privat**. Nur du und die Lehrperson sehen es.
 
 ## Schritt 3: Repo auf den Laptop holen
 
-1. Öffne ein Terminal (Windows: PowerShell, macOS: Terminal).
-2. Wechsle in den Ordner, in dem der Kurs liegen soll, zum Beispiel:
+Du hast zwei Wege. **Weg A ist der einfachste:** Dein Agent macht das Klonen für dich.
+
+### Weg A: Der Agent klont für dich (empfohlen)
+
+1. Öffne im Explorer deinen Ordner **Dokumente**.
+2. Klicke oben in die **Adressleiste** (dort steht «Dokumente»), tippe `powershell`
+   und drücke Enter. Jetzt öffnet sich ein Terminal, das schon im richtigen Ordner steht:
+
+   ![Terminal im Ordner Dokumente](anleitung/2-terminal-im-ordner.png)
+
+3. Tippe `opencode` und drücke Enter. (Mit Claude Code: `claude`.)
+4. Kopiere diesen Auftrag in den Chat und ersetze am Schluss den Namen durch deinen
+   GitHub-Namen:
 
    ```
-   cd Documents
+   Klone mein Kurs-Repo in diesen Ordner: https://github.com/freifach-ki/ff26c-ki-tutor-DEIN-GITHUB-NAME.git
+   Wenn sich ein Fenster zur Anmeldung öffnet, sag mir, was ich klicken soll.
+   Sag mir danach genau, wie ich opencode im neuen Ordner neu starte.
    ```
 
-3. Füge den kopierten Befehl ein und drücke Enter:
+5. Öffnet sich ein Fenster **«Connect to GitHub»**: **Sign in with your browser** wählen
+   und bei GitHub anmelden. Das passiert nur beim ersten Mal.
+6. Danach: opencode mit `Ctrl+C` beenden, dann
 
    ```
-   git clone https://github.com/freifach-ki/ff26c-ki-tutor-<dein-github-name>.git
+   cd ff26c-ki-tutor-DEIN-GITHUB-NAME
+   opencode
    ```
 
-   Beim ersten Mal will Git wissen, wer du bist. Unter Windows öffnet sich ein
-   Fenster: **Sign in with your browser** wählen und bei GitHub anmelden.
-4. Wechsle in den neuen Ordner:
+### Weg B: Selbst im Terminal
 
-   ```
-   cd ff26c-ki-tutor-<dein-github-name>
-   ```
+1. Terminal im Ordner **Dokumente** öffnen, wie oben in Weg A, Punkt 1 und 2.
+2. Den Befehl aus Schritt 2 einfügen (Rechtsklick fügt ein) und Enter drücken:
 
-## Schritt 4: Agent starten und «starte kurs» schreiben
+   ![git clone im Terminal](anleitung/3-clone.png)
 
-1. Starte im Ordner deinen Agenten: `opencode`, `claude` oder `codex`.
-2. Schreib als erste Nachricht:
+   Beim ersten Mal öffnet sich ein Fenster: **Sign in with your browser** wählen und bei
+   GitHub anmelden.
+3. In den neuen Ordner wechseln und den Agenten starten:
+
+   ![cd und opencode](anleitung/4-cd-und-opencode.png)
+
+**Achtung, häufigster Fehler:** Ein Terminal aus dem Startmenü steht oft in
+`C:\Windows\system32`. Dort findet nichts die Kursdateien. Darum immer zuerst `cd`
+in den Kursordner, oder das Terminal über die Adressleiste öffnen wie oben:
+
+![falscher Ordner](anleitung/5-falscher-ordner.png)
+
+## Schritt 4: «starte kurs» schreiben
+
+1. Schreib im Agenten als erste Nachricht:
 
    ```
    starte kurs
    ```
 
-3. Ab jetzt führt dich der Agent Schritt für Schritt durch den Kurstag. Er prüft
-   mit dir das Setup, geht den Sicherheits-Führerschein durch und startet die
-   Übungen. Nach einer Pause geht es mit **«weiter kurs»** weiter.
+2. Ab jetzt führt dich der Agent Schritt für Schritt durch den Kurstag. Befehle, die er
+   dir nennt, tippst du am einfachsten direkt im Chat mit `!` davor, zum Beispiel
+   `!git status`. Nach der Pause geht es mit **«weiter kurs»** weiter.
 
 ## Schritt 5: Am Ende jedes Kurstags hochladen
 
