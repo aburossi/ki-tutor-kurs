@@ -45,7 +45,7 @@ gesichert hast.
 git restore kurs/tag-1.md
 ```
 
-Kontrolle: Die Datei ist wieder ganz.
+Kontrolle: Die Datei ist wieder ganz, und `git status` meldet keine Änderung mehr.
 
 **Bonus, wer mag:** Ändere zwei Dateien und spring mit `git reset --hard <hash>`
 auf den Speicherpunkt aus Station 2 zurück. Achtung: Das löscht **alle** Änderungen
@@ -62,8 +62,11 @@ eigene Notizen, ein Passwort, das Skript der Lehrperson, die Note einer Kollegin
 deine eigene Zusammenfassung.
 
 Auflösung: Passwörter und Daten anderer Personen bleiben draussen. Skripte der
-Lehrperson nur nach `mein-stoff/`, dieser Ordner geht nie auf GitHub. `git status`
-zeigt dir, was Git sieht.
+Lehrperson gehören nach `mein-stoff/`: Dort arbeitet der Tutor damit, das ist
+seine Grundaufgabe. Dieser Ordner geht nie auf GitHub. `git status`
+zeigt dir, was Git sieht. Aber: Was der Agent aus `mein-stoff/` liest, geht an den
+Anbieter des Sprachmodells. `mein-stoff/` schützt vor GitHub, nicht vor dem Anbieter.
+Darüber sprecht ihr in der Ethik-Ecke 1.
 
 ## Nachfrage oder Vollzugriff
 

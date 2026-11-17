@@ -29,22 +29,23 @@ Die Ablaufblätter der Lernenden liegen in `kurs/` (`tag-1.md`, `tag-2.md`, `tag
 
 **Immer bereit:** `python tools/check.py` einmal laufen lassen, bevor die Lernenden kommen. Es prüft die Dateien des Repos, nicht die Rechner.
 
-## Tag 1: Nutzen und Öffnen
+## Tag 1: Einen fertigen Tutor erleben
 
-Ziel: Repo läuft, Sicherheits-Stationen ausprobiert, `prompting-tutor` einmal am eigenen Stoff benutzt.
+Ziel: Repo läuft, Sicherheits-Stationen ausprobiert, der Tutor hat die Lernenden mit `einstieg` kennengelernt (`profil.md`), eine kurze Lernsitzung am eigenen Stoff. Woche 1 von 3: Woche 2 und 3 sind eigene Aufträge in Classroom 50 mit eigenem Repo; `profil.md` ist der Bauauftrag für Woche 2.
 
 | Zeit | Phase | Was die Lehrperson tut | Was die Lernenden tun | Material |
 | --- | --- | --- | --- | --- |
 | 0–5 | Ankommen | Begrüssen, Ziel des Tages an die Wand schreiben, keine Erklärungen zum Setup | Hinsetzen, Terminal öffnen, Ziel lesen | Beamer oder Wandtafel, `kurs/tag-1.md` |
-| 5–15 | Repo holen | Herumgehen, nur bei Klon-Fehlern helfen, Adresse an die Wand | Aufgabe annehmen, privates Repo klonen, Remote `vorlage` eintragen, «starte kurs» | `ANLEITUNG.md`, WLAN |
+| 5–15 | Repo holen | Herumgehen, nur bei Klon-Fehlern helfen, Adresse an die Wand. Ohne Konto: öffentliche Vorlage klonen lassen, kein Konto unter Zeitdruck | Aufgabe annehmen, privates Repo klonen, «starte kurs» | `ANLEITUNG.md`, `setup/hilfe.md` Abschnitt 7, WLAN |
 | 15–25 | Setup prüfen | Sammelstelle für Fehlermeldungen, häufige Fälle aus `setup/installation.md` bereithalten | `pruefen.ps1` bzw. `pruefen.sh` ausführen | `setup/installation.md` |
 | 25–40 | Sicherheits-Führerschein | Herumgehen, nichts abnehmen. Wer mag: Station 3 (Sabotage und Rettung) einmal am Beamer zeigen | Vier Stationen mit dem Agenten, Fragen am Schluss, Abzeichen abhaken | `kurs/sicherheits-fuehrerschein.md` |
-| 40–45 | Überblick | «zeige abläufe» einmal im Plenum zeigen | Selbst ausführen, Namen der Abläufe notieren | Beamer |
-| 45–65 | Üben mit `prompting-tutor` | Nicht eingreifen, nur beobachten; zwei oder drei Sitzungen mithören | «starte prompting-tutor» am eigenen Thema | Eigene Unterlagen |
-| 65–70 | Ablauf lesen | Hinweis: zwei Stellen notieren, die man ändern würde | `skills/prompting-tutor/SKILL.md` lesen | Repo |
+| 40–45 | Unterlagen ablegen | Datenschutz-Regel in einem Satz: keine Namen, keine Noten, keine Fotos von Personen | Unterlagen nach `mein-stoff/<fach>/`, `git status` prüfen | Eigene Unterlagen |
+| 45–57 | Einstieg | Nicht eingreifen; zwei oder drei Interviews mithören. Wer kein Fach findet, bekommt eines genannt | «starte einstieg»: Interview, `profil.md` | `skills/einstieg/` |
+| 57–65 | Mit dem Tutor lernen | Beobachten, ob der Tutor das Profil aufgreift (Niveau, Beispiele aus dem Fach) | Vorgeschlagenen Lernablauf acht Minuten nutzen | Eigene Unterlagen |
+| 65–70 | Hinter die Kulissen | Hinweis: «Das ist kein Programm, sondern ein Text an die KI» | `skills/einstieg/SKILL.md` lesen, zwei Stellen notieren | Repo |
 | 70–75 | Pause | Pause ansagen, Bildschirme wirklich aus | Aufstehen | — |
 | 75–85 | Ethik-Ecke 1 | Input in zwei Minuten, Diskussion zu zweit, Abstimmung per Handzeichen | Lesen, diskutieren, abstimmen | `kurs/ethik-ecke-1.md` |
-| 85–90 | Abschluss | Auf Tag 2 verweisen, an Unterlagen erinnern | Lernjournal-Eintrag schreiben | `lernjournal/_vorlage.md` |
+| 85–90 | Abschluss | Auf Woche 2 verweisen: «Nächste Woche baut ihr aus `profil.md` euren eigenen Tutor» | Ein Journaleintrag für den Tag, `git add -A`, `git commit`, `git push` | `lernjournal/_vorlage.md` |
 
 ## Tag 2: Bauen
 
@@ -117,7 +118,10 @@ Nach jedem Kurstag ausfüllen, direkt danach, solange die Erinnerung frisch ist.
 | Abzeichen am Ende von Tag 1 (Median) |  |  |
 | Phase, die zu lang war |  |  |
 | Phase, die zu kurz war |  |  |
-| Zeit für die Übungssitzung, effektiv (Minuten) |  |  |
+| `profil.md` angelegt (Anzahl) |  |  |
+| Websuche im Einstieg genutzt (Anzahl) |  |  |
+| Unterlagen nicht lesbar (PDF als Bild, Präsentation) (Anzahl) |  |  |
+| Zeit für Einstieg und Lernen, effektiv (Minuten) |  |  |
 | Bemerkungen zur Ethik-Ecke |  |  |
 
 ### Tag 2

@@ -1,5 +1,7 @@
 # Tag 2: Bauen
 
+> **Entwurf, noch nicht gültig.** Woche 2 und 3 laufen in eigenen Repos mit eigenem Auftrag in Classroom 50. Dieses Blatt wird dort neu geschrieben: In Woche 2 baust du aus `profil.md` mit dem Agenten deinen eigenen Tutor.
+
 **Ziel des Tages:** Du hast einen der sechs Lernabläufe an deinen eigenen Berufsstoff angepasst oder mit `skills/_vorlage/` einen eigenen gebaut, und du hast damit mindestens einmal wirklich gelernt.
 
 **Gesamtzeit:** 90 Minuten, davon 10 Minuten Ethik-Ecke.

@@ -11,6 +11,7 @@ Fall in der Übersicht und mach nur diesen Abschnitt.
 | Der Agent fragt zu oft oder gar nicht | [4. Nachfrage oder Vollzugriff](#4-nachfrage-oder-vollzugriff) |
 | Du warst zu spät oder hast einen Kurstag verpasst | [5. Zu spät oder gefehlt](#5-zu-spät-oder-gefehlt) |
 | Die Lehrperson sagt «Kursdateien auffrischen» | [6. Kursdateien auffrischen](#6-kursdateien-auffrischen) |
+| Du hast (noch) kein GitHub-Konto | [7. Ohne Konto arbeiten, später hochladen](#7-ohne-konto-arbeiten-später-hochladen) |
 
 ## 1. Mac: anmelden
 
@@ -104,10 +105,35 @@ bekommt das nicht von selbst. Im Kursordner, im Terminal:
 git add -A
 git commit -m "Stand vor dem Auffrischen"
 git fetch https://github.com/aburossi/ki-tutor-kurs.git main
-git checkout FETCH_HEAD -- AGENTS.md CLAUDE.md ANLEITUNG.md opencode.json .claude kurs setup lehrperson tools skills/kurs
+git checkout FETCH_HEAD -- AGENTS.md CLAUDE.md ANLEITUNG.md opencode.json .claude .opencode kurs setup lehrperson tools skills/kurs skills/einstieg skills/journal
 git commit -m "Kursdateien aufgefrischt"
 ```
 
 Das ersetzt nur die Dateien der Lehrperson. Deine eigenen Abläufe, dein Journal und
 `mein-stoff/` bleiben, wie sie sind. Steht beim letzten Befehl `nothing to commit`,
 war schon alles aktuell.
+
+## 7. Ohne Konto arbeiten, später hochladen
+
+**Heute im Kurs:** Leg kein Konto unter Zeitdruck an. Klone die öffentliche Vorlage:
+
+```
+git clone https://github.com/aburossi/ki-tutor-kurs.git
+```
+
+Damit läuft alles: Agent, Abläufe, Journal, `profil.md`. Am Schluss sicherst du nur
+auf deinem Rechner: `git add -A`, `git commit -m "Kurstag 1"`. Kein `git push`.
+
+**Später, in Ruhe (zu Hause oder nächste Woche):**
+
+1. Einladung aus dem bbw-Postfach annehmen und dabei das GitHub-Konto anlegen
+   (`ANLEITUNG.md`), dann die Aufgabe über den Link der Lehrperson annehmen.
+2. Im Kursordner dein privates Repo als Ziel eintragen und hochladen:
+
+```
+git remote set-url origin https://github.com/freifach-ki/ff26c-ki-tutor-<dein-github-name>.git
+git pull --no-rebase --allow-unrelated-histories origin main
+git push -u origin main
+```
+
+Meldet `git pull` einen Konflikt, gilt Abschnitt 3. Unsicher: Lehrperson fragen.

@@ -9,13 +9,13 @@ PAKETE = {
     "repo": [
         "README.md", "ANLEITUNG.md", "ABZEICHEN.md", "AGENTS.md", "CLAUDE.md", "setup/pruefen.ps1", "setup/pruefen.sh",
         "setup/installation.md", "setup/hilfe.md", "opencode.json", ".claude/settings.json", "lernjournal/README.md", "lernjournal/_vorlage.md",
-        "mein-stoff/README.md",
+        "mein-stoff/README.md", ".opencode/command/einstieg.md", ".claude/commands/einstieg.md", ".opencode/command/journal.md", ".claude/commands/journal.md",
     ],
     "skills": [
         "skills/README.md", "skills/_vorlage/SKILL.md",
         *[f"skills/{n}/SKILL.md" for n in (
             "prompting-tutor", "abfrager", "sokrates", "erklaer-mirs",
-            "pruefungssimulator", "notfall-zusammenfasser", "kurs")],
+            "pruefungssimulator", "notfall-zusammenfasser", "kurs", "einstieg", "journal")],
     ],
     "kurs": [
         "kurs/tag-1.md", "kurs/tag-2.md", "kurs/tag-3.md",
@@ -91,7 +91,7 @@ def main() -> int:
     if "repo" in wahl and (ROOT / "AGENTS.md").is_file():
         agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
         for n in ("prompting-tutor", "abfrager", "sokrates", "erklaer-mirs",
-                  "pruefungssimulator", "notfall-zusammenfasser", "skills/kurs"):
+                  "pruefungssimulator", "notfall-zusammenfasser", "skills/kurs", "skills/einstieg", "skills/journal"):
             if n not in agents:
                 fehler.append(f"AGENTS.md nennt Ablauf '{n}' nicht")
     for f in fehler:

@@ -13,8 +13,18 @@ zwingt dich, hinzuschauen. Der Tutor erklärt, du denkst.
 
 ## Wer schreibt
 
-Der Agent schreibt den Eintrag am Ende jeder Sitzung, nach den Kontrollfragen. Er
-zeigt dir den Text vorher, du sagst OK oder änderst ihn.
+Der Agent führt das Journal mit dir, nach `skills/journal/SKILL.md`. Im Kurstag
+trägt er nach jedem Schritt eine kurze Zeile ein (was schwierig war, wie du es gelöst
+hast) und zeigt sie dir im Chat. Am Schluss ergänzt ihr Kontrollfragen und nächsten
+Schritt, und mit `/journal review` prüft er alles vor der Abgabe. Grössere Einträge
+zeigt er dir vorher, du sagst OK oder änderst sie. Er schreibt nur auf, was du
+gesagt hast, und erfindet nichts dazu.
+
+Das Journal hat drei Aufgaben: Es ist dein Lernprotokoll, es ist das Gedächtnis des
+Tutors (er liest es beim nächsten Start und weiss, wo du stehst), und es ist deine
+Abgabe: Mit jedem `git push` sieht die Lehrperson in Classroom 50, wie du
+vorankommst. Mit `/journal chat` kannst du zusätzlich einen Chatverlauf als Beleg
+in `lernjournal/chats/` ablegen.
 
 Du liest ihn danach und ergänzt, was fehlt: eine eigene Notiz, ein Beispiel, eine
 Frage für die nächste Sitzung. Das Journal gehört dir, nicht dem Tutor.

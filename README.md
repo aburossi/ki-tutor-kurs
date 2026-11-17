@@ -9,8 +9,14 @@ mit dir ein Lernjournal.
 Der Tutor ist kein Ghostwriter. Er schreibt dir keine Aufträge, Vorträge oder
 Prüfungsantworten, die du als eigene abgibst. Er hilft dir, es selbst zu können.
 
-Du holst dir ein eigenes Exemplar dieses Repos. Danach passt du die
-Abläufe an und baust eigene. Das ist dein Abschlussprojekt.
+Der Kurs dauert drei Wochen, jede Woche mit eigenem Auftrag und eigenem Repo:
+
+1. **Woche 1 (dieses Repo):** Du erlebst einen fertigen Tutor. Er lernt dich in einem
+   Interview kennen («starte einstieg»), liest deine Unterlagen und lernt mit dir.
+   Am Schluss liegt dein Profil in `profil.md`.
+2. **Woche 2:** Aus `profil.md` baust du mit dem Agenten deinen eigenen Tutor für ein Fach.
+3. **Woche 3:** Du testest ihn, machst ihn fertig und stellst ihn vor. Das ist dein
+   Abschlussprojekt.
 
 ## Weg im Kurs: Aufgabe annehmen (privates Repo)
 

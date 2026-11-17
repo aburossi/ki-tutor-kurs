@@ -9,7 +9,8 @@ mit **«starte <name>»**, zum Beispiel «starte abfrager». Dein Agent liest da
 
 | Ablauf | Grundsatz | Wann starten |
 | --- | --- | --- |
-| Prompting-Tutor | Lernen durch Rückmeldung und Überarbeitung | am Kurstag 1; wenn du lernen willst, einen Agenten gut anzuleiten |
+| Einstieg | Vorwissen aktivieren und Ziele klären | zuerst, am Kurstag 1; wenn du ein neues Fach oder eine neue Prüfung angehst. Schreibt `profil.md` |
+| Prompting-Tutor | Lernen durch Rückmeldung und Überarbeitung | wenn du schneller fertig bist; vor dem Bauen in Woche 2; wenn du lernen willst, einen Agenten gut anzuleiten |
 | Abfrager | Aktives Abrufen | nach dem Lesen; vor einer Prüfung; wenn du unsicher bist, was hängen blieb |
 | Sokrates | Sokratisches Fragen | wenn du etwas «irgendwie verstehst», es aber nicht erklären kannst |
 | Erklär-mirs | Selbsterklären (Lernen durch Lehren) | vor einer mündlichen Prüfung; wenn du prüfen willst, ob dein Verständnis trägt |

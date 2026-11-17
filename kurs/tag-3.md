@@ -1,5 +1,7 @@
 # Tag 3: Übertragen und Abschluss
 
+> **Entwurf, noch nicht gültig.** Woche 2 und 3 laufen in eigenen Repos mit eigenem Auftrag in Classroom 50. Dieses Blatt wird dort neu geschrieben: In Woche 2 baust du aus `profil.md` mit dem Agenten deinen eigenen Tutor.
+
 **Ziel des Tages:** Dein Ablauf funktioniert auf einem zweiten Fach oder ist von einer anderen Person getestet, du stellst ihn in zwei Minuten vor, und du gibst Rückmeldung zum Kurs.
 
 **Gesamtzeit:** 90 Minuten, davon 10 Minuten Ethik-Ecke 3 und 5 Minuten Kursrückmeldung.
